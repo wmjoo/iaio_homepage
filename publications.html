@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>논문 - 아주대 산업인공지능최적화 연구실</title>
+    <meta name="description" content="아주대학교 산업인공지능최적화 연구실 논문 및 연구 성과">
+    <meta name="keywords" content="아주대, 산업인공지능, 최적화, 논문, 연구성과, 학술지">
+    <meta name="author" content="IAIO Lab">
+    
+    <!-- PWA 매니페스트 -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- 아이콘 -->
+    <link rel="icon" type="image/png" sizes="192x192" href="https://via.placeholder.com/192x192/003876/FFFFFF?text=IAIO">
+    <link rel="apple-touch-icon" href="https://via.placeholder.com/180x180/003876/FFFFFF?text=IAIO">
+    
+    <!-- 테마 색상 -->
+    <meta name="theme-color" content="#003876">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="IAIO Lab">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 데스크톱 헤더 -->
+    <header class="desktop-header">
+        <div class="header-top">
+            <div class="header-left">
+                <a href="index.html" class="header-link">HOME</a>
+                <button class="dark-mode-toggle" id="darkModeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="header-right">
+                <a href="member.html" class="header-link">LOGIN</a>
+                <a href="links.html" class="header-link">SITEMAP</a>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="intro.html" class="nav-link">INTRODUCTION</a>
+                    <ul class="sub-nav">
+                        <li><a href="intro.html#why-optimization" class="sub-link">Why Optimization?</a></li>
+                        <li><a href="intro.html#about-lab" class="sub-link">About Our Lab</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="people.html" class="nav-link">PEOPLE</a>
+                    <ul class="sub-nav">
+                        <li><a href="people.html#professor" class="sub-link">Professor</a></li>
+                        <li><a href="people.html#students" class="sub-link">Graduate students</a></li>
+                        <li><a href="people.html#interns" class="sub-link">Intern students</a></li>
+                        <li><a href="people.html#alumni" class="sub-link">Alumni</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="research.html" class="nav-link">RESEARCH</a>
+                    <ul class="sub-nav">
+                        <li><a href="research.html" class="sub-link">Research Field</a></li>
+                        <li><a href="research.html#projects" class="sub-link">Projects</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="publications.html" class="nav-link active">PUBLICATIONS</a>
+                    <ul class="sub-nav">
+                        <li><a href="publications.html#international" class="sub-link">International Journals</a></li>
+                        <li><a href="publications.html#domestic" class="sub-link">Domestic Journals</a></li>
+                        <li><a href="publications.html#conferences" class="sub-link">International Conferences</a></li>
+                        <li><a href="publications.html#domestic-conf" class="sub-link">Domestic Conferences</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="references.html" class="nav-link">REFERENCES</a>
+                    <ul class="sub-nav">
+                        <li><a href="references.html#research-materials" class="sub-link">Research Materials</a></li>
+                        <li><a href="references.html#project-materials" class="sub-link">Project Materials</a></li>
+                        <li><a href="references.html#miscellaneous" class="sub-link">Miscellaneous</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="courses.html" class="nav-link">COURSES</a>
+                    <ul class="sub-nav">
+                        <li><a href="courses.html#undergraduate" class="sub-link">Undergraduate</a></li>
+                        <li><a href="courses.html#graduate" class="sub-link">Graduate</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="board.html" class="nav-link">BOARD</a>
+                    <ul class="sub-nav">
+                        <li><a href="board.html#news" class="sub-link">NEWS</a></li>
+                        <li><a href="board.html#qna" class="sub-link">Q&A</a></li>
+                        <li><a href="board.html#photo" class="sub-link">Photo Album</a></li>
+                        <li><a href="board.html#schedule" class="sub-link">Schedule</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="links.html" class="nav-link">LINKS</a>
+                    <ul class="sub-nav">
+                        <li><a href="links.html#journals" class="sub-link">Journals</a></li>
+                        <li><a href="links.html#conferences" class="sub-link">Conferences</a></li>
+                        <li><a href="links.html#softwares" class="sub-link">Softwares</a></li>
+                        <li><a href="links.html#related-sites" class="sub-link">Related sites</a></li>
+                        <li><a href="links.html" class="sub-link">Sitemap</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 모바일 네비게이션 -->
+    <nav class="mobile-nav">
+        <div class="nav-header">
+            <a href="index.html" class="logo-link">
+                <div class="logo">
+                    <h1>IAIO Lab</h1>
+                    <p>산업인공지능최적화 연구실</p>
+                </div>
+            </a>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="다크모드 토글">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="nav-menu" id="navMenu">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">HOME</a></li>
+                <li><a href="intro.html" class="nav-link">INTRODUCTION</a></li>
+                <li><a href="people.html" class="nav-link">PEOPLE</a></li>
+                <li><a href="research.html" class="nav-link">RESEARCH</a></li>
+                <li><a href="publications.html" class="nav-link active">PUBLICATIONS</a></li>
+                <li><a href="references.html" class="nav-link">REFERENCES</a></li>
+                <li><a href="courses.html" class="nav-link">COURSES</a></li>
+                <li><a href="board.html" class="nav-link">BOARD</a></li>
+                <li><a href="links.html" class="nav-link">LINKS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 메인 콘텐츠 -->
+    <main class="main-content publications-container">
+        <!-- 페이지 헤더 -->
+        <section class="page-header">
+            <div class="header-content">
+                <h1>PUBLICATIONS</h1>
+            </div>
+        </section>
+
+        <!-- 논문 통계 -->
+        <section class="publication-stats">
+            <div class="section-header">
+                <h2><i class="fas fa-chart-bar"></i> Publication Statistics</h2>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">28</div>
+                    <div class="stat-label">International Journals</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">29</div>
+                    <div class="stat-label">Domestic Journals</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Conference Presentations</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- International Journals -->
+        <section class="international-journals" id="international">
+            <div class="section-header">
+                <h2><i class="fas fa-globe"></i> International Journals</h2>
+            </div>
+            <div class="publication-list">
+                <div class="publication-item">
+                    <div class="publication-year">2024</div>
+                    <div class="publication-content">
+                        <h3>Efficient imputation of missing data using the information of local space defined by the geometric one-class classifier</h3>
+                        <p class="authors">D. K. Kim and J. Y. Choi</p>
+                        <p class="journal">Expert Systems With Applications, Vol. 242, Article 122775, 2024.05. (SCIE, IF=7.5)</p>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-year">2022</div>
+                    <div class="publication-content">
+                        <h3>Efficient Fab Facility Layout with Spine Structure using Genetic Algorithm under various Material-handling Considerations</h4>
+                        <p class="authors">Y. J. Suh and J. Y. Choi</p>
+                        <p class="journal">International Journal of Production Research, Vol. 60, No. 9, pp. 2816-2829, 2022.06. (SCIE, IF=9.018)</p>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-year">2022</div>
+                    <div class="publication-content">
+                        <h3>Density-Based Geometric One-Class Classifier Combined with Genetic Algorithm</h3>
+                        <p class="authors">D. K. Kim and J. Y. Choi</p>
+                        <p class="journal">Mathematical Problems in Engineering, Vol. 2022, Article ID 7852456, pp. 1-18, 2022.04. (SCIE, IF=1.430)</p>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-year">2021</div>
+                    <div class="publication-content">
+                        <h3>Optimization of Design Parameters in LSTM Model for Predictive Maintenance</h3>
+                        <p class="authors">D. K. Kim and J. Y. Choi</p>
+                        <p class="journal">Applied Sciences-BASEL, Vol. 11, No. 14, 6450, 2021.07. (SCIE, IF=2.679)</p>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-year">2019</div>
+                    <div class="publication-content">
+                        <h3>Optimal Powder Deposition Process to Develop a New Direct-Write Additive Manufacturing System</h3>
+                        <p class="authors">H. Chung, N. Lee, J. Ko, T. Lee, and J. Y. Choi</p>
+                        <p class="journal">International Journal of Precision Engineering and Manufacturing, Vol. 20, No. 6, pp. 1057-1067, 2019.06. (SCIE)</p>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-year">2019</div>
+                    <div class="publication-content">
+                        <h3>Geometric One-class Classifiers using Hyper-rectangles for Knowledge Extraction</h3>
+                        <p class="authors">I. Jeong, D. G. Kim, J. Y. Choi, and J. Ko</p>
+                        <p class="journal">Expert Systems With Applications, Vol. 117, pp. 112-124, 2019.03. (SCIE, IF=3.768)</p>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-year">2018</div>
+                    <div class="publication-content">
+                        <h3>Accelerated Dynamic Programming algorithms for a Car Resequencing Problem in automotive paint shops</h3>
+                        <p class="authors">S. Hong, J. Han, J. Y. Choi, and K. Lee</p>
+                        <p class="journal">Applied Mathematical Modelling, Vol. 64, pp. 285-297, 2018.12. (SCIE)</p>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-year">2017</div>
+                    <div class="publication-content">
+                        <h3>Tire Mixing Process Scheduling using Particle Swarm Optimization</h3>
+                        <p class="authors">H. H. Kim, D. G. Kim, J. Y. Choi, and S. S. Park</p>
+                        <p class="journal">Computers & IE, Vol. 110, pp. 333-343, 2017.08. (SCIE)</p>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-year">2016</div>
+                    <div class="publication-content">
+                        <h3>Paint Batching Problem on M-to-1 Conveyor Systems</h3>
+                        <p class="authors">S. S. Ko, Y. H. Han, and J. Y. Choi</p>
+                        <p class="journal">Computers & OR, Vol. 74, pp. 118-126, 2016.10. (SCIE, IF=2.600)</p>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-year">2015</div>
+                    <div class="publication-content">
+                        <h3>Hierarchical Multi-class LAD based on OvA-Binary Tree using Genetic Algorithm</h3>
+                        <p class="authors">H. H. Kim and J. Y. Choi</p>
+                        <p class="journal">Expert Systems With Applications, Vol. 42, No. 21, pp. 8134-8145, 2015.11. (SCIE, IF=2.981)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Domestic Journals -->
+        <section class="domestic-journals" id="domestic">
+            <div class="section-header">
+                <h2><i class="fas fa-book"></i> Domestic Journals</h2>
+            </div>
+            <div class="publication-list">
+                <div class="publication-item">
+                    <div class="publication-year">2024</div>
+                    <div class="publication-content">
+                        <h3>군수품 품질수준진단 프레임워크 설계</h3>
+                        <p class="authors">강요한, 최진영</p>
+                        <p class="journal">한국품질경영학회지, Vol. 52, No. 3, pp. 495-508, 2024.09. (학진등재)</p>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-year">2022</div>
+                    <div class="publication-content">
+                        <h3>PoN 분산합의 알고리즘 탈중앙화 분석 및 제어 모델 설계</h3>
+                        <p class="authors">최진영, 김영창, 오진태, 김기영</p>
+                        <p class="journal">한국산업경영시스템학회지, Vol. 45, No. 1, pp. 1-9, 2022.03. (학진등재)</p>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-year">2021</div>
+                    <div class="publication-content">
+                        <h3>반응표면분석을 이용한 PoN 블록체인 시스템 합의품질 개선</h3>
+                        <p class="authors">최진영, 김영창, 오진태, 김기영</p>
+                        <p class="journal">한국품질경영학회지, Vol. 49, No. 4, pp. 527-537, 2021.12. (학진등재)</p>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-year">2021</div>
+                    <div class="publication-content">
+                        <h3>간헐적 수요를 갖는 철도 차량 유지보수 부품을 위한 기계학습 기반 수요예측 개선</h3>
+                        <p class="authors">최정기, 최진영</p>
+                        <p class="journal">대한설비관리학회지, Vol. 26, No. 3, pp. 17-25, 2021.09. (학진등재)</p>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-year">2020</div>
+                    <div class="publication-content">
+                        <h3>빅데이터를 위한 H-RTGL 기반 단일 분류기 분산 처리 프레임워크 설계</h3>
+                        <p class="authors">김도균, 최진영</p>
+                        <p class="journal">한국품질경영학회지, Vol. 48, No. 4, pp. 553-566, 2020.12. (학진등재)</p>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-year">2020</div>
+                    <div class="publication-content">
+                        <h3>BADA 분산합의 알고리즘 시뮬레이터 설계 및 성능 분석</h3>
+                        <p class="authors">김영창, 김기영, 오진태, 김도균, 최진영</p>
+                        <p class="journal">한국산업경영시스템학회지, Vol. 43, No. 4, pp. 168-177, 2020.12. (학진등재)</p>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-year">2020</div>
+                    <div class="publication-content">
+                        <h3>AHP기반 에어백 조립 생산 배치 개선</h3>
+                        <p class="authors">최윤규, 최진영</p>
+                        <p class="journal">대한설비관리학회지, Vol. 25, No. 3, pp. 37-45, 2020.09. (학진등재)</p>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-year">2020</div>
+                    <div class="publication-content">
+                        <h3>디스플레이 FAB 생산능력 예측 개선 사례 연구</h3>
+                        <p class="authors">길준필, 최진영</p>
+                        <p class="journal">한국산업경영시스템학회지, Vol. 43, No. 2, pp. 26-34, 2020.06. (학진등재)</p>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-year">2019</div>
+                    <div class="publication-content">
+                        <h3>확률적 프로세스 트리 생성을 위한 타부 검색-유전자 프로세스 마이닝 알고리즘</h3>
+                        <p class="authors">주우민, 최진영</p>
+                        <p class="journal">한국산업경영시스템학회지, Vol. 42, No. 4, pp. 183-193, 2019.12. (학진등재)</p>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-year">2018</div>
+                    <div class="publication-content">
+                        <h3>평가항목 제안 및 분석을 통한 블록체인 분산합의 알고리즘 성능 개선</h3>
+                        <p class="authors">김도균, 최진영, 김기영, 오진태</p>
+                        <p class="journal">한국산업경영시스템학회지, Vol. 41, No. 4, pp. 179-188, 2018.12. (학진등재)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- International Conferences -->
+        <section class="conference-presentations" id="conferences">
+            <div class="section-header">
+                <h2><i class="fas fa-globe-americas"></i> International Conferences</h2>
+            </div>
+            <div class="conference-list">
+                <div class="conference-item">
+                    <div class="conference-year">2024</div>
+                    <div class="conference-content">
+                        <h3>IEEE International Conference on Industrial Informatics</h3>
+                        <p class="conference-location">Singapore</p>
+                        <p class="presentation-title">"Efficient imputation of missing data using geometric one-class classifier"</p>
+                        <p class="presenters">D. K. Kim, J. Y. Choi</p>
+                    </div>
+                </div>
+                <div class="conference-item">
+                    <div class="conference-year">2023</div>
+                    <div class="conference-content">
+                        <h3>International Conference on Industrial Engineering</h3>
+                        <p class="conference-location">Seoul, Korea</p>
+                        <p class="presentation-title">"AI-Based Optimization for Smart Manufacturing Systems"</p>
+                        <p class="presenters">Y. J. Suh, J. Y. Choi</p>
+                    </div>
+                </div>
+                <div class="conference-item">
+                    <div class="conference-year">2022</div>
+                    <div class="conference-content">
+                        <h3>International Conference on Operations Research</h3>
+                        <p class="conference-location">Vienna, Austria</p>
+                        <p class="presentation-title">"Density-Based Geometric One-Class Classifier for Data Analytics"</p>
+                        <p class="presenters">D. K. Kim, J. Y. Choi</p>
+                    </div>
+                </div>
+                <div class="conference-item">
+                    <div class="conference-year">2021</div>
+                    <div class="conference-content">
+                        <h3>IEEE International Conference on Industrial Informatics</h3>
+                        <p class="conference-location">Palma, Spain</p>
+                        <p class="presentation-title">"LSTM Model Optimization for Predictive Maintenance"</p>
+                        <p class="presenters">D. K. Kim, J. Y. Choi</p>
+                    </div>
+                </div>
+                <div class="conference-item">
+                    <div class="conference-year">2020</div>
+                    <div class="conference-content">
+                        <h3>International Conference on Manufacturing Systems</h3>
+                        <p class="conference-location">Tokyo, Japan</p>
+                        <p class="presentation-title">"Optimal Powder Deposition Process for Additive Manufacturing"</p>
+                        <p class="presenters">H. Chung, J. Y. Choi</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Domestic Conferences -->
+        <section class="domestic-conferences" id="domestic-conf">
+            <div class="section-header">
+                <h2><i class="fas fa-users"></i> Domestic Conferences</h2>
+            </div>
+            <div class="conference-list">
+                <div class="conference-item">
+                    <div class="conference-year">2024</div>
+                    <div class="conference-content">
+                        <h3>한국품질경영학회 춘계학술대회</h3>
+                        <p class="conference-location">서울, 한국</p>
+                        <p class="presentation-title">"군수품 품질수준진단 프레임워크 설계"</p>
+                        <p class="presenters">강요한, 최진영</p>
+                    </div>
+                </div>
+                <div class="conference-item">
+                    <div class="conference-year">2022</div>
+                    <div class="conference-content">
+                        <h3>한국산업경영시스템학회 춘계학술대회</h3>
+                        <p class="conference-location">서울, 한국</p>
+                        <p class="presentation-title">"PoN 분산합의 알고리즘 탈중앙화 분석 및 제어 모델 설계"</p>
+                        <p class="presenters">최진영, 김영창, 오진태, 김기영</p>
+                    </div>
+                </div>
+                <div class="conference-item">
+                    <div class="conference-year">2021</div>
+                    <div class="conference-content">
+                        <h3>한국품질경영학회 추계학술대회</h3>
+                        <p class="conference-location">부산, 한국</p>
+                        <p class="presentation-title">"반응표면분석을 이용한 PoN 블록체인 시스템 합의품질 개선"</p>
+                        <p class="presenters">최진영, 김영창, 오진태, 김기영</p>
+                    </div>
+                </div>
+                <div class="conference-item">
+                    <div class="conference-year">2021</div>
+                    <div class="conference-content">
+                        <h3>대한설비관리학회 춘계학술대회</h3>
+                        <p class="conference-location">대구, 한국</p>
+                        <p class="presentation-title">"간헐적 수요를 갖는 철도 차량 유지보수 부품을 위한 기계학습 기반 수요예측 개선"</p>
+                        <p class="presenters">최정기, 최진영</p>
+                    </div>
+                </div>
+                <div class="conference-item">
+                    <div class="conference-year">2020</div>
+                    <div class="conference-content">
+                        <h3>한국품질경영학회 추계학술대회</h3>
+                        <p class="conference-location">서울, 한국</p>
+                        <p class="presentation-title">"빅데이터를 위한 H-RTGL 기반 단일 분류기 분산 처리 프레임워크 설계"</p>
+                        <p class="presenters">김도균, 최진영</p>
+                    </div>
+                </div>
+                <div class="conference-item">
+                    <div class="conference-year">2020</div>
+                    <div class="conference-content">
+                        <h3>한국산업경영시스템학회 추계학술대회</h3>
+                        <p class="conference-location">제주, 한국</p>
+                        <p class="presentation-title">"BADA 분산합의 알고리즘 시뮬레이터 설계 및 성능 분석"</p>
+                        <p class="presenters">김영창, 김기영, 오진태, 김도균, 최진영</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-copyright">
+                <p>COPYRIGHT © INDUSTRIAL AI OPTIMIZATION LAB ALL RIGHT RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- TOP 버튼 -->
+    <button class="top-button" id="topButton" aria-label="맨 위로 이동" onclick="window.scrollTo(0,0)">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script>
+        // 다크모드 토글 기능
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        
+        // 로컬 스토리지에서 다크모드 상태 확인
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        }
+        
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            const isDark = body.classList.contains('dark-mode');
+            
+            if (isDark) {
+                darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+                localStorage.setItem('darkMode', 'true');
+            } else {
+                darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+                localStorage.setItem('darkMode', 'false');
+            }
+        });
+    </script>
+</body>
+</html>

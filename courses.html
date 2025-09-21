@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강의 - 아주대 산업인공지능최적화 연구실</title>
+    <meta name="description" content="아주대학교 산업인공지능최적화 연구실 강의 정보">
+    <meta name="keywords" content="아주대, 산업인공지능, 최적화, 강의, 교육">
+    <meta name="author" content="IAIO Lab">
+    
+    <!-- PWA 매니페스트 -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- 아이콘 -->
+    <link rel="icon" type="image/png" sizes="192x192" href="https://via.placeholder.com/192x192/003876/FFFFFF?text=IAIO">
+    <link rel="apple-touch-icon" href="https://via.placeholder.com/180x180/003876/FFFFFF?text=IAIO">
+    
+    <!-- 테마 색상 -->
+    <meta name="theme-color" content="#003876">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="IAIO Lab">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 데스크톱 헤더 -->
+    <header class="desktop-header">
+        <div class="header-top">
+            <div class="header-left">
+                <a href="index.html" class="header-link">HOME</a>
+                <button class="dark-mode-toggle" id="darkModeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="header-right">
+                <a href="member.html" class="header-link">LOGIN</a>
+                <a href="links.html" class="header-link">SITEMAP</a>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="intro.html" class="nav-link">INTRODUCTION</a>
+                    <ul class="sub-nav">
+                        <li><a href="intro.html#why-optimization" class="sub-link">Why Optimization?</a></li>
+                        <li><a href="intro.html#about-lab" class="sub-link">About Our Lab</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="people.html" class="nav-link">PEOPLE</a>
+                    <ul class="sub-nav">
+                        <li><a href="people.html#professor" class="sub-link">Professor</a></li>
+                        <li><a href="people.html#students" class="sub-link">Graduate students</a></li>
+                        <li><a href="people.html#interns" class="sub-link">Intern students</a></li>
+                        <li><a href="people.html#alumni" class="sub-link">Alumni</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="research.html" class="nav-link">RESEARCH</a>
+                    <ul class="sub-nav">
+                        <li><a href="research.html" class="sub-link">Research Field</a></li>
+                        <li><a href="research.html#projects" class="sub-link">Projects</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="publications.html" class="nav-link">PUBLICATIONS</a>
+                    <ul class="sub-nav">
+                        <li><a href="publications.html#international" class="sub-link">International Journals</a></li>
+                        <li><a href="publications.html#domestic" class="sub-link">Domestic Journals</a></li>
+                        <li><a href="publications.html#conferences" class="sub-link">International Conferences</a></li>
+                        <li><a href="publications.html#domestic-conf" class="sub-link">Domestic Conferences</a></li>
+                        <li><a href="publications.html#miscellaneous" class="sub-link">Miscellaneous</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="references.html" class="nav-link">REFERENCES</a>
+                    <ul class="sub-nav">
+                        <li><a href="references.html#research-materials" class="sub-link">Research Materials</a></li>
+                        <li><a href="references.html#project-materials" class="sub-link">Project Materials</a></li>
+                        <li><a href="references.html#miscellaneous" class="sub-link">Miscellaneous</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="courses.html" class="nav-link active">COURSES</a>
+                    <ul class="sub-nav">
+                        <li><a href="courses.html#undergraduate" class="sub-link">Undergraduate</a></li>
+                        <li><a href="courses.html#graduate" class="sub-link">Graduate</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="board.html" class="nav-link">BOARD</a>
+                    <ul class="sub-nav">
+                        <li><a href="board.html#news" class="sub-link">NEWS</a></li>
+                        <li><a href="board.html#qna" class="sub-link">Q&A</a></li>
+                        <li><a href="board.html#photo" class="sub-link">Photo Album</a></li>
+                        <li><a href="board.html#schedule" class="sub-link">Schedule</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="links.html" class="nav-link">LINKS</a>
+                    <ul class="sub-nav">
+                        <li><a href="links.html#journals" class="sub-link">Journals</a></li>
+                        <li><a href="links.html#conferences" class="sub-link">Conferences</a></li>
+                        <li><a href="links.html#softwares" class="sub-link">Softwares</a></li>
+                        <li><a href="links.html#related-sites" class="sub-link">Related sites</a></li>
+                        <li><a href="links.html" class="sub-link">Sitemap</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 모바일 네비게이션 -->
+    <nav class="mobile-nav">
+        <div class="nav-header">
+            <a href="index.html" class="logo-link">
+                <div class="logo">
+                    <h1>IAIO Lab</h1>
+                    <p>산업인공지능최적화 연구실</p>
+                </div>
+            </a>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="다크모드 토글">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="nav-menu" id="navMenu">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">HOME</a></li>
+                <li><a href="intro.html" class="nav-link">INTRODUCTION</a></li>
+                <li><a href="people.html" class="nav-link">PEOPLE</a></li>
+                <li><a href="research.html" class="nav-link">RESEARCH</a></li>
+                <li><a href="publications.html" class="nav-link">PUBLICATIONS</a></li>
+                <li><a href="references.html" class="nav-link">REFERENCES</a></li>
+                <li><a href="courses.html" class="nav-link active">COURSES</a></li>
+                <li><a href="board.html" class="nav-link">BOARD</a></li>
+                <li><a href="links.html" class="nav-link">LINKS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 메인 콘텐츠 -->
+    <main class="main-content">
+        <!-- 페이지 헤더 -->
+        <section class="page-header">
+            <div class="header-content">
+                <h1>COURSES</h1>
+            </div>
+        </section>
+
+        <!-- Undergraduate -->
+        <section class="undergraduate-courses" id="undergraduate">
+            <div class="section-header">
+                <h2><i class="fas fa-graduation-cap"></i> Undergraduate</h2>
+            </div>
+            <div class="course-content">
+                <div class="course-item">
+                    <h3>Operations Research & Practice I</h3>
+                    <p>These days it is necessary to efficiently resolve various decision making problems occurred in the areas of production, transportation, and telecommunication where economic situation is changed drastically. Specifically, in this course, we deal with linear programming(LP) method which represents those problems by using linear objective function and linear constraints. We learn basic idea and solution procedure of simplex method for LP and apply it to some examples from application areas such as transportation problem, assignment problem, and several network flow problems. Through this course, we expect that students can develop their abilities to understand, analyze, and solve the problems, while suggesting some alternatives for improving the current situation.</p>
+                </div>
+                <div class="course-item">
+                    <h3>Operations Research & Practice II</h3>
+                    <p>Based on Operations Research & Practice I, in this course we consider several other kinds of solution and analysis methodologies. They can be classified into two groups such as deterministic and stochastic methods. In case of deterministic ones, we consider integer programming(IP), dynamic programming(DP), non-linear programming(NLP) and meta-heuristics. For stochastic methods, we deal with Markov chain and Queueing theory. These methods have their own properties, which can be used to compromise each other in order to resolve decision making problems. Therefore, after this course, students can have various perspectives for modeling and analyzing a system, depending on their objectives and situation.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Graduate -->
+        <section class="graduate-courses" id="graduate">
+            <div class="section-header">
+                <h2><i class="fas fa-user-graduate"></i> Graduate</h2>
+            </div>
+            <div class="course-content">
+                <div class="course-item">
+                    <h3>Advance Linear Programming</h3>
+                    <p>This course is an advanced OR I which we studied at undergraduate program. We reconsider linear programming in more detail by investigating linear algebra, convex analysis, and simplex method in matrix form and so on. Based on the theoretical understanding of LP, we try to develop the ability to solve large scale problem by using optimization software. For this purpose, we learn how to use Cplex, including setting up environment for Cplex, installing it and modeling a problem with it. Students need to complete one project by developing and implementing Cplex model to solve one decision making problem occurred in their own research areas.</p>
+                </div>
+                <div class="course-item">
+                    <h3>Non-linear Programming</h3>
+                    <p>Most decision making issues occurred in the area of production and information systems are known as NP-hard, and it is very difficult to get an optimal solution. Therefore, it is very important to find out a good quality of solution efficiently and effectively. In this course, we deal with some basic search methods and meta-heuristics that can be used for solving either non-linear optimization problem or combinatorial optimization problem. Students need to complete one project by developing and implementing an algorithm to solve one decision making problem occurred in their own research areas, while pursuing to improve the ability of applying them to real situation.</p>
+                </div>
+                <div class="course-item">
+                    <h3>Discrete System Analysis</h3>
+                    <p>This course deals with modeling and analysis methods for discrete event systems that can be useful for efficient design and analysis of production and service systems. Several basic methodologies and applications in discrete event system theory are introduced, which include Finite Automata, Petri nets, Stochastic Timed Automata, Markov Chain, Queuing Theory, and Dynamic Programming. Through this course, students can develop basic skills and ability for efficient design and control of industrial and information systems.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-copyright">
+                <p>COPYRIGHT © INDUSTRIAL AI OPTIMIZATION LAB ALL RIGHT RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- TOP 버튼 -->
+    <button class="top-button" id="topButton" aria-label="맨 위로 이동" onclick="window.scrollTo(0,0)">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script>
+        // 다크모드 토글 기능
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        
+        // 로컬 스토리지에서 다크모드 상태 확인
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        }
+        
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            const isDark = body.classList.contains('dark-mode');
+            
+            if (isDark) {
+                darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+                localStorage.setItem('darkMode', 'true');
+            } else {
+                darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+                localStorage.setItem('darkMode', 'false');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Field - 아주대 산업인공지능최적화 연구실</title>
+    <meta name="description" content="아주대학교 산업인공지능최적화 연구실 연구 분야 및 프로젝트">
+    <meta name="keywords" content="아주대, 산업인공지능, 최적화, 연구, 프로젝트, AI">
+    <meta name="author" content="IAIO Lab">
+    
+    <!-- PWA 매니페스트 -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- 아이콘 -->
+    <link rel="icon" type="image/png" sizes="192x192" href="https://via.placeholder.com/192x192/003876/FFFFFF?text=IAIO">
+    <link rel="apple-touch-icon" href="https://via.placeholder.com/180x180/003876/FFFFFF?text=IAIO">
+    
+    <!-- 테마 색상 -->
+    <meta name="theme-color" content="#003876">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="IAIO Lab">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 데스크톱 헤더 -->
+    <header class="desktop-header">
+        <div class="header-top">
+            <div class="header-left">
+                <a href="index.html" class="header-link">HOME</a>
+                <button class="dark-mode-toggle" id="darkModeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="header-right">
+                <a href="member.html" class="header-link">LOGIN</a>
+                <a href="links.html" class="header-link">SITEMAP</a>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="intro.html" class="nav-link">INTRODUCTION</a>
+                    <ul class="sub-nav">
+                        <li><a href="intro.html#why-optimization" class="sub-link">Why Optimization?</a></li>
+                        <li><a href="intro.html#about-lab" class="sub-link">About Our Lab</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="people.html" class="nav-link">PEOPLE</a>
+                    <ul class="sub-nav">
+                        <li><a href="people.html#professor" class="sub-link">Professor</a></li>
+                        <li><a href="people.html#students" class="sub-link">Graduate students</a></li>
+                        <li><a href="people.html#interns" class="sub-link">Intern students</a></li>
+                        <li><a href="people.html#alumni" class="sub-link">Alumni</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="research.html" class="nav-link active">RESEARCH</a>
+                    <ul class="sub-nav">
+                        <li><a href="research.html" class="sub-link">Research Field</a></li>
+                        <li><a href="research.html#projects" class="sub-link">Projects</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="publications.html" class="nav-link">PUBLICATIONS</a>
+                    <ul class="sub-nav">
+                        <li><a href="publications.html#international" class="sub-link">International Journals</a></li>
+                        <li><a href="publications.html#domestic" class="sub-link">Domestic Journals</a></li>
+                        <li><a href="publications.html#conferences" class="sub-link">International Conferences</a></li>
+                        <li><a href="publications.html#domestic-conf" class="sub-link">Domestic Conferences</a></li>
+                        <li><a href="publications.html#miscellaneous" class="sub-link">Miscellaneous</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="references.html" class="nav-link">REFERENCES</a>
+                    <ul class="sub-nav">
+                        <li><a href="references.html#research-materials" class="sub-link">Research Materials</a></li>
+                        <li><a href="references.html#project-materials" class="sub-link">Project Materials</a></li>
+                        <li><a href="references.html#miscellaneous" class="sub-link">Miscellaneous</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="courses.html" class="nav-link">COURSES</a>
+                    <ul class="sub-nav">
+                        <li><a href="courses.html#undergraduate" class="sub-link">Undergraduate</a></li>
+                        <li><a href="courses.html#graduate" class="sub-link">Graduate</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="board.html" class="nav-link">BOARD</a>
+                    <ul class="sub-nav">
+                        <li><a href="board.html#news" class="sub-link">NEWS</a></li>
+                        <li><a href="board.html#qna" class="sub-link">Q&A</a></li>
+                        <li><a href="board.html#photo" class="sub-link">Photo Album</a></li>
+                        <li><a href="board.html#schedule" class="sub-link">Schedule</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="links.html" class="nav-link">LINKS</a>
+                    <ul class="sub-nav">
+                        <li><a href="links.html#journals" class="sub-link">Journals</a></li>
+                        <li><a href="links.html#conferences" class="sub-link">Conferences</a></li>
+                        <li><a href="links.html#softwares" class="sub-link">Softwares</a></li>
+                        <li><a href="links.html#related-sites" class="sub-link">Related sites</a></li>
+                        <li><a href="links.html" class="sub-link">Sitemap</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 모바일 네비게이션 -->
+    <nav class="mobile-nav">
+        <div class="nav-header">
+            <a href="index.html" class="logo-link">
+                <div class="logo">
+                    <h1>IAIO Lab</h1>
+                    <p>산업인공지능최적화 연구실</p>
+                </div>
+            </a>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="다크모드 토글">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="nav-menu" id="navMenu">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">HOME</a></li>
+                <li><a href="intro.html" class="nav-link">INTRODUCTION</a></li>
+                <li><a href="people.html" class="nav-link">PEOPLE</a></li>
+                <li><a href="research.html" class="nav-link active">RESEARCH</a></li>
+                <li><a href="publications.html" class="nav-link">PUBLICATIONS</a></li>
+                <li><a href="references.html" class="nav-link">REFERENCES</a></li>
+                <li><a href="courses.html" class="nav-link">COURSES</a></li>
+                <li><a href="board.html" class="nav-link">BOARD</a></li>
+                <li><a href="links.html" class="nav-link">LINKS</a></li>
+                <li><a href="member.html" class="nav-link">MEMBER</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 메인 콘텐츠 -->
+    <main class="main-content">
+        <!-- 페이지 헤더 -->
+        <section class="page-header">
+            <div class="header-content">
+                <h1>RESEARCH</h1>
+            </div>
+        </section>
+
+        <!-- Research Fields -->
+        <section class="research-fields">
+            <div class="section-header">
+                <h2><i class="fas fa-flask"></i> Research Fields</h2>
+            </div>
+            <div class="fields-grid">
+                <a href="#optimization-analytics" class="field-card">
+                    <div class="field-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Optimization-based Data Analytics</h3>
+                </a>
+                <a href="#manufacturing-ai" class="field-card">
+                    <div class="field-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>AI in Manufacturing Industry</h3>
+                </a>
+                <a href="#xai" class="field-card">
+                    <div class="field-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>XAI (Explainable AI)</h3>
+                </a>
+                <a href="#blockchain" class="field-card">
+                    <div class="field-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h3>Blockchain Consensus Algorithm</h3>
+                </a>
+            </div>
+        </section>
+
+        <!-- 연구 주제들 -->
+        <section class="research-topics">
+            <div class="topic-item" id="optimization-analytics">
+                <div class="topic-bullet">
+                    <i class="fas fa-circle"></i>
+                </div>
+                <div class="topic-content">
+                    <h3>Optimization-based data Analytics</h3>
+                    <p>This is to develop scheduling policies for either performance control (e.g., maximizing throughput) or logical control (e.g., avoiding deadlock), or for both of them, by considering some data obtained from system operation. Currently, we have two topics.</p>
+                    <div class="topic-image">
+                        <img src="http://iaio.ajou.ac.kr/images/sub/sub_img_02.jpg" alt="Data Analytics">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="topic-item" id="manufacturing-ai">
+                <div class="topic-bullet">
+                    <i class="fas fa-circle"></i>
+                </div>
+                <div class="topic-content">
+                    <h3>AI in Manufacturing Industry</h3>
+                    <p>Based on our manufacturing domain knowledge, we converge with recently developed artificial intelligence technology to derive new solutions. It can be applied to various problems such as predictive maintenance, quality inspection, and manufacturing process optimization.</p>
+                    <div class="topic-image">
+                        <img src="https://images.unsplash.com/photo-1565043589221-1a6fd9b7b4b0?w=800&h=600&fit=crop" alt="Manufacturing AI">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="topic-item" id="xai">
+                <div class="topic-bullet">
+                    <i class="fas fa-circle"></i>
+                </div>
+                <div class="topic-content">
+                    <h3>XAI (Explainable AI)</h3>
+                    <p>Black box AI systems have spread to many of today's applications. The intransparency of ML techniques may be a limiting or even disqualifying factor. Research on XAI (Explainable AI) is being actively conducted to overcome these black box models. XAI is a technology that enables users to understand and interpret the behavior and the results of an artificial intelligence system and explain the process by which the results are generated. Our lab is conducting a study to determine the cause of the result by using composition methodology to interpret the result of LSTM algorithm specialized in time series data.</p>
+                    <div class="topic-image">
+                        <img src="http://iaio.ajou.ac.kr/upload/board_photo/jpg2.jpg" alt="XAI">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="topic-item" id="blockchain">
+                <div class="topic-bullet">
+                    <i class="fas fa-circle"></i>
+                </div>
+                <div class="topic-content">
+                    <h3>Blockchain Consensus Algorithm</h3>
+                    <p>A consensus algorithm is a procedure through which all the peers of the Blockchain network reach a common agreement about the present state of the distributed ledger. There are various approaches to reaching a consensus. Our lab compares these approaches with each other and optimizes them for the newly proposed algorithm.</p>
+                    <div class="topic-image">
+                        <img src="http://iaio.ajou.ac.kr/upload/board_photo/png3.png" alt="Blockchain">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="topic-item">
+                <div class="topic-bullet">
+                    <i class="fas fa-circle"></i>
+                </div>
+                <div class="topic-content">
+                    <h3>Application Areas</h3>
+                    <p>Production Systems, Supply Chain Management, Service Systems, etc.</p>
+                    <div class="topic-image">
+                        <img src="http://iaio.ajou.ac.kr/images/sub/sub_img_02.jpg" alt="Application Areas">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="projects-section" id="projects">
+            <div class="section-header">
+                <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+            </div>
+            
+            <div class="projects-content">
+                <div class="current-project">
+                    <h3><i class="fas fa-rocket"></i> Current</h3>
+                    <div class="project-item">
+                        <div class="project-bullet">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                        <div class="project-content">
+                            <h4>Performance and Efficiency assurance research of PON Distributed consensus algorithm Re-agreement</h4>
+                            <p><strong>Period:</strong> 2020. 03 – (ongoing)</p>
+                            <p><strong>Supported by:</strong> Grant from ETRI</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="completed-projects">
+                    <h3><i class="fas fa-trophy"></i> Completed</h3>
+                <div class="project-list">
+                        <div class="project-item">
+                            <div class="project-bullet">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                            <div class="project-content">
+                                <h4>Performance modeling, analysis and control of structurally controlled resource allocation systems</h4>
+                                <p><strong>Period:</strong> 2007 – 2009</p>
+                                <p><strong>Supported by:</strong> Grant from Ajou University</p>
+                            </div>
+                        </div>
+
+                        <div class="project-item">
+                            <div class="project-bullet">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                            <div class="project-content">
+                                <h4>Development of Control methods for all-IP-based integrated network/service</h4>
+                                <p><strong>Period:</strong> 2009</p>
+                                <p><strong>Supported by:</strong> Grant from ETRI</p>
+                            </div>
+                        </div>
+
+                        <div class="project-item">
+                            <div class="project-bullet">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                            <div class="project-content">
+                                <h4>Research on simulation and modeling for the operation of green energy network</h4>
+                                <p><strong>Period:</strong> 2009 – 2011</p>
+                                <p><strong>Supported by:</strong> Grant from Ajou University</p>
+                            </div>
+                        </div>
+
+                        <div class="project-item">
+                            <div class="project-bullet">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                            <div class="project-content">
+                                <h4>Research on performance improvement of Fab scheduling through Neuro-Dynamic programming approximation method using feature functions</h4>
+                                <p><strong>Period:</strong> 2009 – 2011</p>
+                                <p><strong>Supported by:</strong> Grant from the National Research Foundation of Korea</p>
+                            </div>
+                        </div>
+
+                        <div class="project-item">
+                            <div class="project-bullet">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                            <div class="project-content">
+                                <h4>Design and performance analysis of the pretreatment process for end-of-life electric home appliance recycling</h4>
+                                <p><strong>Period:</strong> 2012 – 2013</p>
+                                <p><strong>Supported by:</strong> Grant from Institute For Advanced Engineering</p>
+                            </div>
+                        </div>
+
+                        <div class="project-item">
+                            <div class="project-bullet">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                            <div class="project-content">
+                                <h4>Design of an efficient Multi-classification model based on Logical Analysis of Data (LAD) for improving performance of yield classification and abnormal pattern recognition in Fab process</h4>
+                                <p><strong>Period:</strong> 2012 – 2014</p>
+                                <p><strong>Supported by:</strong> Grant from the National Research Foundation of Korea</p>
+                            </div>
+                        </div>
+
+                        <div class="project-item">
+                            <div class="project-bullet">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                            <div class="project-content">
+                                <h4>Research on technologies for integrated collaboration environment</h4>
+                                <p><strong>Period:</strong> 2008 – 2016</p>
+                                <p><strong>Supported by:</strong> Grant from ADD</p>
+                            </div>
+                        </div>
+
+                        <div class="project-item">
+                            <div class="project-bullet">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                            <div class="project-content">
+                                <h4>Design and analysis of stochastic process mining</h4>
+                                <p><strong>Period:</strong> 2014.11 – 2017.05</p>
+                                <p><strong>Supported by:</strong> Grant from the National Research Foundation of Korea</p>
+                            </div>
+                        </div>
+
+                        <div class="project-item">
+                            <div class="project-bullet">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                            <div class="project-content">
+                                <h4>Research on Mathematical Model for block generation algorithm</h4>
+                                <p><strong>Period:</strong> 2018.05 – 2018.11</p>
+                                <p><strong>Supported by:</strong> Grant from ETRI</p>
+                            </div>
+                        </div>
+
+                        <div class="project-item">
+                            <div class="project-bullet">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                            <div class="project-content">
+                                <h4>Research on Performance analysis of new consensus algorithm</h4>
+                                <p><strong>Period:</strong> 2019.03 – 2019.11</p>
+                                <p><strong>Supported by:</strong> Grant from ETRI</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-copyright">
+                <p>COPYRIGHT © INDUSTRIAL AI OPTIMIZATION LAB ALL RIGHT RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- TOP 버튼 -->
+    <button class="top-button" id="topButton" aria-label="맨 위로 이동" onclick="window.scrollTo(0,0)">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script>
+        // 다크모드 토글 기능
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        
+        // 로컬 스토리지에서 다크모드 상태 확인
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        }
+        
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            const isDark = body.classList.contains('dark-mode');
+            
+            if (isDark) {
+                darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+                localStorage.setItem('darkMode', 'true');
+            } else {
+                darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+                localStorage.setItem('darkMode', 'false');
+            }
+        });
+    </script>
+</body>
+</html>

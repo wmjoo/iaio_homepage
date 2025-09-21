@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아주대 산업인공지능최적화 연구실</title>
+    <meta name="description" content="아주대학교 산업인공지능최적화 연구실 공식 홈페이지">
+    <meta name="keywords" content="아주대, 산업인공지능, 최적화, 연구실, SMOL">
+    <meta name="author" content="IAIO Lab">
+    
+    <!-- PWA 매니페스트 -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- 아이콘 -->
+    <link rel="icon" type="image/png" sizes="192x192" href="https://via.placeholder.com/192x192/003876/FFFFFF?text=IAIO">
+    <link rel="apple-touch-icon" href="https://via.placeholder.com/180x180/003876/FFFFFF?text=IAIO">
+    
+    <!-- 테마 색상 -->
+    <meta name="theme-color" content="#003876">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="IAIO Lab">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 데스크톱 헤더 -->
+    <header class="desktop-header">
+        <div class="header-top">
+            <div class="header-left">
+                <a href="index.html" class="header-link">HOME</a>
+                <button class="dark-mode-toggle" id="darkModeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="header-right">
+                <a href="member.html" class="header-link">LOGIN</a>
+                <a href="links.html" class="header-link">SITEMAP</a>
+            </div>
+        </div>
+        
+        <!-- 메인 네비게이션 -->
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="intro.html" class="nav-link">INTRODUCTION</a>
+                    <div class="sub-nav">
+                        <a href="intro.html" class="sub-link active">WHY OPTIMIZATION?</a>
+                        <a href="intro.html" class="sub-link">ABOUT OUR LAB</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="people.html" class="nav-link">PEOPLE</a>
+                    <div class="sub-nav">
+                        <a href="people.html" class="sub-link">PROFESSOR</a>
+                        <a href="people.html" class="sub-link">GRADUATE STUDENTS</a>
+                        <a href="people.html" class="sub-link">INTERN STUDENTS</a>
+                        <a href="people.html" class="sub-link">ALUMNI</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="research.html" class="nav-link">RESEARCH</a>
+                    <div class="sub-nav">
+                        <a href="research.html" class="sub-link">연구 FIELD</a>
+                        <a href="research.html" class="sub-link">PROJECTS</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="publications.html" class="nav-link">PUBLICATIONS</a>
+                    <div class="sub-nav">
+                        <a href="publications.html" class="sub-link">INTERNATIONAL JOURNALS</a>
+                        <a href="publications.html" class="sub-link">DOMESTIC JOURNALS</a>
+                        <a href="publications.html" class="sub-link">INTERNATIONAL CONFERENCES</a>
+                        <a href="publications.html" class="sub-link">DOMESTIC CONFERENCES</a>
+                        <a href="publications.html" class="sub-link">MISCELLANEOUS</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="references.html" class="nav-link">REFERENCES</a>
+                    <div class="sub-nav">
+                        <a href="references.html" class="sub-link">연구 MATERIALS</a>
+                        <a href="references.html" class="sub-link">PROJECT MATERIALS</a>
+                        <a href="references.html" class="sub-link">MISCELLANEOUS</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="courses.html" class="nav-link">COURSES</a>
+                    <div class="sub-nav">
+                        <a href="courses.html" class="sub-link">UNDERGRADUATE</a>
+                        <a href="courses.html" class="sub-link">GRADUATE</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="board.html" class="nav-link">BOARD</a>
+                    <div class="sub-nav">
+                        <a href="board.html" class="sub-link">NEWS</a>
+                        <a href="board.html" class="sub-link">Q&A</a>
+                        <a href="board.html" class="sub-link">PHOTO ALBUM</a>
+                        <a href="board.html" class="sub-link">SCHEDULE</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="links.html" class="nav-link">LINKS</a>
+                    <div class="sub-nav">
+                        <a href="links.html" class="sub-link">JOURNALS</a>
+                        <a href="links.html" class="sub-link">CONFERENCES</a>
+                        <a href="links.html" class="sub-link">SOFTWARES</a>
+                        <a href="links.html" class="sub-link">RELATED SITES</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 모바일 네비게이션 -->
+    <nav class="mobile-nav">
+        <div class="nav-header">
+            <a href="index.html" class="logo-link">
+                <div class="logo">
+                    <h1>IAIO Lab</h1>
+                    <p>산업인공지능최적화 연구실</p>
+                </div>
+            </a>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="다크모드 토글">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="nav-menu" id="navMenu">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">HOME</a></li>
+                <li><a href="intro.html" class="nav-link">INTRODUCTION</a></li>
+                <li><a href="people.html" class="nav-link">PEOPLE</a></li>
+                <li><a href="research.html" class="nav-link">RESEARCH</a></li>
+                <li><a href="publications.html" class="nav-link">PUBLICATIONS</a></li>
+                <li><a href="references.html" class="nav-link">REFERENCES</a></li>
+                <li><a href="courses.html" class="nav-link">COURSES</a></li>
+                <li><a href="board.html" class="nav-link">BOARD</a></li>
+                <li><a href="links.html" class="nav-link">LINKS</a></li>
+                <li><a href="member.html" class="nav-link">MEMBER</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 메인 콘텐츠 -->
+    <main class="main-content">
+        <!-- 메인 레이아웃 -->
+        <div class="main-layout">
+            <!-- 왼쪽 메인 콘텐츠 -->
+            <div class="main-left">
+                <!-- 연구실 소개 -->
+                <section class="lab-intro">
+                    <div class="intro-header">
+                        <h1 class="lab-title">Industrial AI Optimization Lab</h1>
+                        <h2 class="lab-subtitle">산업인공지능 최적화 연구실</h2>
+                    </div>
+                    <div class="intro-text">
+                        <p>As in the name for our lab, we are interested in Decision Science dealing with how to manage and operate systems efficiently by using optimization...</p>
+                        <a href="intro.html" class="read-more-btn">자세히보기 ></a>
+                    </div>
+                    
+                    <!-- 프로세스 다이어그램 -->
+                    <div class="process-diagram">
+                        <div class="process-bubble problem">
+                            <div class="bubble-content">
+                                <h3>A Problem</h3>
+                                <div class="bubble-icon">
+                                    <i class="fas fa-industry"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="process-bubble solution">
+                            <div class="bubble-content">
+                                <h3>An (a near) Optimal Solution</h3>
+                                <div class="bubble-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="process-bubble model">
+                            <div class="bubble-content">
+                                <h3>An Optimization Model</h3>
+                                <div class="bubble-icon">
+                                    <i class="fas fa-project-diagram"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="process-arrows">
+                            <div class="arrow arrow-1"></div>
+                            <div class="arrow arrow-2"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <!-- 오른쪽 사이드바 -->
+            <div class="main-right">
+                <!-- 공지사항 -->
+                <section class="sidebar-notice">
+                    <div class="sidebar-header">
+                        <h3>Notice | 공지사항</h3>
+                    </div>
+                    <div class="notice-list">
+                        <div class="notice-item">
+                            <span class="notice-date">2022-11-10</span>
+                            <a href="#" class="notice-title">연구실 세미나 일정 안내</a>
+                        </div>
+                        <div class="notice-item">
+                            <span class="notice-date">2022-10-15</span>
+                            <a href="#" class="notice-title">신입 연구원 모집 공고</a>
+                        </div>
+                        <div class="notice-item">
+                            <span class="notice-date">2022-09-20</span>
+                            <a href="#" class="notice-title">학회 발표 일정 변경</a>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- 사진 갤러리 -->
+                <section class="sidebar-gallery">
+                    <div class="sidebar-header">
+                        <h3>Photo Gallery | 사진 게시판</h3>
+                    </div>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=150&h=150&fit=crop" alt="연구실 활동">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=150&h=150&fit=crop" alt="연구실 전경">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1523240798033-32699a4ea7d7?w=150&h=150&fit=crop" alt="세미나">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=150&h=150&fit=crop" alt="연구 활동">
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Q&A -->
+                <section class="sidebar-qa">
+                    <div class="sidebar-header">
+                        <h3>Q&A | 질의 응답 게시판</h3>
+                    </div>
+                    <div class="qa-list">
+                        <div class="qa-item">
+                            <span class="qa-date">2024-07-23</span>
+                            <a href="#" class="qa-title">Mr.</a>
+                        </div>
+                        <div class="qa-item">
+                            <span class="qa-date">2024-07-20</span>
+                            <a href="#" class="qa-title">연구실 방문 문의</a>
+                        </div>
+                        <div class="qa-item">
+                            <span class="qa-date">2024-07-18</span>
+                            <a href="#" class="qa-title">대학원 진학 상담</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-copyright">
+                <p>COPYRIGHT © INDUSTRIAL AI OPTIMIZATION LAB ALL RIGHT RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- TOP 버튼 -->
+    <button class="top-button" id="topButton" aria-label="맨 위로 이동" onclick="window.scrollTo(0,0)">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script>
+        // 다크모드 토글 기능
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        
+        // 로컬 스토리지에서 다크모드 상태 확인
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        }
+        
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            const isDark = body.classList.contains('dark-mode');
+            
+            if (isDark) {
+                darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+                localStorage.setItem('darkMode', 'true');
+            } else {
+                darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+                localStorage.setItem('darkMode', 'false');
+            }
+        });
+    </script>
+</body>
+</html>
