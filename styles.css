@@ -5724,7 +5724,7 @@ body.dark-mode .stat-card * {
     margin-bottom: var(--space-6);
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: var(--space-2);
+    margin-top: 0;
 }
 
 .tab-btn {
