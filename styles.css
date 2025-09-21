@@ -579,6 +579,7 @@ body {
 .nav-menu.active {
     max-height: 100vh;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .nav-list {
@@ -5944,6 +5945,13 @@ body.dark-mode .stat-card * {
     
     .tab-btn {
         justify-content: center;
+    }
+    
+    /* 모바일 네비게이션 높이 확실히 설정 */
+    .nav-menu.active {
+        max-height: 100vh;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
     }
 }
 
