@@ -5740,8 +5740,9 @@ body.dark-mode .stat-card * {
     font-size: 0.875rem;
     font-weight: 500;
     text-decoration: none;
-    min-height: 44px;
+    height: 44px;
     box-sizing: border-box;
+    line-height: 1;
 }
 
 .tab-btn:hover {
@@ -5858,9 +5859,16 @@ body.dark-mode .stat-card * {
 
 .sitemap-structure {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: var(--space-4);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-5);
     margin-bottom: var(--space-8);
+}
+
+@media (max-width: 1024px) {
+    .sitemap-structure {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: var(--space-4);
+    }
 }
 
 @media (max-width: 768px) {
@@ -5873,15 +5881,33 @@ body.dark-mode .stat-card * {
 .sitemap-section {
     background: white;
     border-radius: 12px;
-    padding: var(--space-5);
-    box-shadow: var(--shadow-sm);
+    padding: var(--space-6);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     border: 1px solid var(--gray-200);
     transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.sitemap-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary), var(--primary-light));
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
 }
 
 .sitemap-section:hover {
-    box-shadow: var(--shadow-md);
-    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    transform: translateY(-3px);
+}
+
+.sitemap-section:hover::before {
+    transform: scaleX(1);
 }
 
 .sitemap-section h2 {
@@ -5904,7 +5930,7 @@ body.dark-mode .stat-card * {
     gap: var(--space-2);
 }
 
-.sitemap-links .sitemap-link {
+.sitemap-links a {
     color: var(--gray-700);
     text-decoration: none;
     padding: var(--space-2) var(--space-3);
@@ -5915,7 +5941,7 @@ body.dark-mode .stat-card * {
     border-left: 3px solid transparent;
 }
 
-.sitemap-links .sitemap-link:hover {
+.sitemap-links a:hover {
     background: var(--primary-light);
     color: var(--primary);
     border-left-color: var(--primary);
