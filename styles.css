@@ -129,6 +129,25 @@ body {
     gap: var(--space-2);
 }
 
+.sitemap-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: var(--primary);
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.sitemap-link:hover {
+    background: var(--primary-dark);
+    transform: translateY(-1px);
+}
+
 .theme-toggle {
     background: none;
     border: none;
@@ -5715,12 +5734,16 @@ body.dark-mode .stat-card * {
     transition: all 0.3s ease;
     font-size: 0.875rem;
     font-weight: 500;
+    text-decoration: none;
+    min-height: 44px;
+    box-sizing: border-box;
 }
 
 .tab-btn:hover {
     background: var(--primary);
     color: white;
     border-color: var(--primary);
+    transform: translateY(-1px);
 }
 
 .tab-btn.active {
@@ -5743,6 +5766,8 @@ body.dark-mode .stat-card * {
     font-size: 0.875rem;
     font-weight: 500;
     text-decoration: none;
+    min-height: 44px;
+    box-sizing: border-box;
 }
 
 .sitemap-btn:hover {
