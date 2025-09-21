@@ -1344,12 +1344,16 @@ body {
 .page-header {
     background: var(--gradient-primary);
     color: white;
-    padding: 0.25rem var(--space-3);
+    padding: 0.2rem var(--space-3);
     border-radius: var(--radius-lg);
     margin-bottom: var(--space-8);
     text-align: center;
     position: relative;
     overflow: hidden;
+    height: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .page-header::before {
