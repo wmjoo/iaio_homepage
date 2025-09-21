@@ -5729,6 +5729,28 @@ body.dark-mode .stat-card * {
     border-color: var(--primary);
 }
 
+.sitemap-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-4);
+    background: var(--success);
+    color: white;
+    border: 1px solid var(--success);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.sitemap-btn:hover {
+    background: #059669;
+    border-color: #059669;
+    transform: translateY(-1px);
+}
+
 .tab-content {
     display: none;
 }
@@ -5944,6 +5966,10 @@ body.dark-mode .stat-card * {
     }
     
     .tab-btn {
+        justify-content: center;
+    }
+    
+    .sitemap-btn {
         justify-content: center;
     }
     
