@@ -577,7 +577,8 @@ body {
 }
 
 .nav-menu.active {
-    max-height: none;
+    max-height: 100vh;
+    overflow-y: auto;
 }
 
 .nav-list {
