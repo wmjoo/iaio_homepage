@@ -577,7 +577,7 @@ body {
 }
 
 .nav-menu.active {
-    max-height: 800px;
+    max-height: none;
 }
 
 .nav-list {
@@ -3587,9 +3587,9 @@ body.dark-mode .stat-label {
 
 /* 모바일 네비게이션 링크 */
 .mobile-nav .nav-link {
-    padding: var(--space-4) var(--space-6);
+    padding: var(--space-3) var(--space-4);
     border-bottom: 1px solid var(--gray-200);
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 600;
     color: var(--gray-800);
     transition: all 0.2s ease;
