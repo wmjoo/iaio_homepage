@@ -5734,9 +5734,9 @@ body.dark-mode .stat-card * {
     align-items: center;
     gap: var(--space-2);
     padding: var(--space-3) var(--space-4);
-    background: var(--success);
+    background: var(--primary);
     color: white;
-    border: 1px solid var(--success);
+    border: 1px solid var(--primary);
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -5746,8 +5746,8 @@ body.dark-mode .stat-card * {
 }
 
 .sitemap-btn:hover {
-    background: #059669;
-    border-color: #059669;
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
     transform: translateY(-1px);
 }
 
