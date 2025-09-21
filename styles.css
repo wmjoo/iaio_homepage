@@ -5720,10 +5720,11 @@ body.dark-mode .stat-card * {
 
 .links-tabs {
     display: flex;
-    gap: var(--space-2);
-    margin-bottom: var(--space-8);
+    gap: var(--space-3);
+    margin-bottom: var(--space-6);
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: var(--space-4);
 }
 
 .tab-btn {
@@ -6011,16 +6012,18 @@ body.dark-mode .stat-card * {
     }
     
     .links-tabs {
-        flex-direction: column;
-        align-items: stretch;
+        flex-direction: row;
+        align-items: center;
+        gap: var(--space-2);
+        justify-content: center;
     }
     
     .tab-btn {
+        flex: 1;
+        min-width: 0;
         justify-content: center;
-    }
-    
-    .sitemap-btn {
-        justify-content: center;
+        font-size: 0.8rem;
+        padding: var(--space-2) var(--space-3);
     }
     
     /* 모바일 네비게이션 높이 확실히 설정 */
