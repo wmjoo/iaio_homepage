@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>아주대 산업인공지능최적화 연구실</title>
-    <meta name="description" content="아주대학교 산업인공지능최적화 연구실 공식 홈페이지">
-    <meta name="keywords" content="아주대, 산업인공지능, 최적화, 연구실, SMOL">
+    <title>Schedule - 아주대 산업인공지능최적화 연구실</title>
+    <meta name="description" content="아주대학교 산업인공지능최적화 연구실 일정 및 캘린더">
+    <meta name="keywords" content="아주대, 산업인공지능, 최적화, 연구실, 일정, 캘린더">
     <meta name="author" content="IAIO Lab">
     
     <!-- PWA 매니페스트 -->
@@ -52,7 +52,7 @@
                 <li class="nav-item">
                     <a href="intro.html" class="nav-link">INTRODUCTION</a>
                     <div class="sub-nav">
-                        <a href="intro.html" class="sub-link active">WHY OPTIMIZATION?</a>
+                        <a href="intro.html" class="sub-link">WHY OPTIMIZATION?</a>
                         <a href="intro.html" class="sub-link">ABOUT OUR LAB</a>
                     </div>
                 </li>
@@ -103,7 +103,7 @@
                         <a href="news.html" class="sub-link">NEWS</a>
                         <a href="qna.html" class="sub-link">Q&A</a>
                         <a href="photo.html" class="sub-link">PHOTO ALBUM</a>
-                        <a href="schedule.html" class="sub-link">SCHEDULE</a>
+                        <a href="schedule.html" class="sub-link active">SCHEDULE</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -158,119 +158,113 @@
 
     <!-- 메인 콘텐츠 -->
     <main class="main-content">
-        <!-- 메인 레이아웃 -->
-        <div class="main-layout">
-            <!-- 왼쪽 메인 콘텐츠 -->
-            <div class="main-left">
-                <!-- 연구실 소개 -->
-                <section class="lab-intro">
-                    <div class="intro-header">
-                        <h1 class="lab-title">Industrial AI Optimization Lab</h1>
-                        <h2 class="lab-subtitle">산업인공지능 최적화 연구실</h2>
-                    </div>
-                    <div class="intro-text">
-                        <p>As in the name for our lab, we are interested in Decision Science dealing with how to manage and operate systems efficiently by using optimization...</p>
-                        <a href="intro.html" class="read-more-btn">자세히보기 ></a>
+        <div class="page-header">
+            <div class="container">
+                <h1 class="page-title">Schedule</h1>
+                <p class="page-subtitle">연구실 일정 및 캘린더</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="schedule-content">
+                <!-- 구글 캘린더 임베드 -->
+                <div class="calendar-section">
+                    <div class="calendar-header">
+                        <h2>연구실 일정</h2>
+                        <p>구글 캘린더와 연동된 실시간 일정을 확인하세요</p>
                     </div>
                     
-                    <!-- 프로세스 다이어그램 -->
-                    <div class="process-diagram">
-                        <div class="process-bubble problem">
-                            <div class="bubble-content">
-                                <h3>A Problem</h3>
-                                <div class="bubble-icon">
-                                    <i class="fas fa-industry"></i>
-                                </div>
+                    <!-- 구글 캘린더 임베드 -->
+                    <div class="calendar-embed">
+                        <iframe 
+                            src="https://calendar.google.com/calendar/embed?src=your-calendar-id%40gmail.com&ctz=Asia%2FSeoul" 
+                            style="border: 0" 
+                            width="100%" 
+                            height="600" 
+                            frameborder="0" 
+                            scrolling="no">
+                        </iframe>
+                    </div>
+                    
+                    <!-- 캘린더 링크 -->
+                    <div class="calendar-links">
+                        <a href="https://calendar.google.com/calendar" target="_blank" class="calendar-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            구글 캘린더에서 보기
+                        </a>
+                        <a href="https://calendar.google.com/calendar/ical/your-calendar-id%40gmail.com/public/basic.ics" class="calendar-link">
+                            <i class="fas fa-download"></i>
+                            iCal 다운로드
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 주요 일정 목록 -->
+                <div class="schedule-list">
+                    <h3>주요 일정</h3>
+                    <div class="schedule-items">
+                        <div class="schedule-item">
+                            <div class="schedule-date">
+                                <span class="month">JAN</span>
+                                <span class="day">15</span>
+                            </div>
+                            <div class="schedule-content">
+                                <h4>연구실 세미나</h4>
+                                <p>최적화 알고리즘 연구 발표</p>
+                                <span class="schedule-time">14:00 - 16:00</span>
                             </div>
                         </div>
-                        <div class="process-bubble solution">
-                            <div class="bubble-content">
-                                <h3>An (a near) Optimal Solution</h3>
-                                <div class="bubble-icon">
-                                    <i class="fas fa-chart-line"></i>
-                                </div>
+
+                        <div class="schedule-item">
+                            <div class="schedule-date">
+                                <span class="month">JAN</span>
+                                <span class="day">20</span>
+                            </div>
+                            <div class="schedule-content">
+                                <h4>학회 발표</h4>
+                                <p>대한산업공학회 춘계학술대회</p>
+                                <span class="schedule-time">09:00 - 18:00</span>
                             </div>
                         </div>
-                        <div class="process-bubble model">
-                            <div class="bubble-content">
-                                <h3>An Optimization Model</h3>
-                                <div class="bubble-icon">
-                                    <i class="fas fa-project-diagram"></i>
-                                </div>
+
+                        <div class="schedule-item">
+                            <div class="schedule-date">
+                                <span class="month">JAN</span>
+                                <span class="day">25</span>
+                            </div>
+                            <div class="schedule-content">
+                                <h4>연구실 회의</h4>
+                                <p>월간 연구 진행 상황 보고</p>
+                                <span class="schedule-time">10:00 - 12:00</span>
                             </div>
                         </div>
-                        <div class="process-arrows">
-                            <div class="arrow arrow-1"></div>
-                            <div class="arrow arrow-2"></div>
+
+                        <div class="schedule-item">
+                            <div class="schedule-date">
+                                <span class="month">FEB</span>
+                                <span class="day">05</span>
+                            </div>
+                            <div class="schedule-content">
+                                <h4>논문 제출 마감</h4>
+                                <p>국제 학술지 논문 제출</p>
+                                <span class="schedule-time">23:59</span>
+                            </div>
                         </div>
                     </div>
-                </section>
-            </div>
-            
-            <!-- 오른쪽 사이드바 -->
-            <div class="main-right">
-                <!-- 공지사항 -->
-                <section class="sidebar-notice">
-                    <div class="sidebar-header">
-                        <h3>Notice | 공지사항</h3>
+                </div>
+
+                <!-- 일정 추가 안내 -->
+                <div class="schedule-info">
+                    <div class="info-card">
+                        <i class="fas fa-info-circle"></i>
+                        <h4>일정 추가 방법</h4>
+                        <p>연구실 일정을 추가하려면 구글 캘린더에 직접 추가하거나 연구실 담당자에게 문의하세요.</p>
+                        <a href="mailto:iaio@ajou.ac.kr" class="contact-btn">
+                            <i class="fas fa-envelope"></i>
+                            담당자에게 문의
+                        </a>
                     </div>
-                    <div class="notice-list">
-                        <div class="notice-item">
-                            <span class="notice-date">2022-11-10</span>
-                            <a href="news.html" class="notice-title">연구실 세미나 일정 안내</a>
-                        </div>
-                        <div class="notice-item">
-                            <span class="notice-date">2022-10-15</span>
-                            <a href="news.html" class="notice-title">신입 연구원 모집 공고</a>
-                        </div>
-                        <div class="notice-item">
-                            <span class="notice-date">2022-09-20</span>
-                            <a href="news.html" class="notice-title">학회 발표 일정 변경</a>
-                        </div>
-                    </div>
-                </section>
-                
-                <!-- 사진 갤러리 -->
-                <section class="sidebar-gallery">
-                    <div class="sidebar-header">
-                        <h3>Photo Gallery | 사진 게시판</h3>
-                    </div>
-                    <div class="gallery-grid">
-                        <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=150&h=150&fit=crop" alt="연구실 활동">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=150&h=150&fit=crop" alt="연구실 전경">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1523240798033-32699a4ea7d7?w=150&h=150&fit=crop" alt="세미나">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=150&h=150&fit=crop" alt="연구 활동">
-                        </div>
-                    </div>
-                </section>
-                
-                <!-- Q&A -->
-                <section class="sidebar-qa">
-                    <div class="sidebar-header">
-                        <h3>Q&A | 질의 응답 게시판</h3>
-                    </div>
-                    <div class="qa-list">
-                        <div class="qa-item">
-                            <span class="qa-date">2024-07-23</span>
-                            <a href="qna.html" class="qa-title">Mr.</a>
-                        </div>
-                        <div class="qa-item">
-                            <span class="qa-date">2024-07-20</span>
-                            <a href="qna.html" class="qa-title">연구실 방문 문의</a>
-                        </div>
-                        <div class="qa-item">
-                            <span class="qa-date">2024-07-18</span>
-                            <a href="qna.html" class="qa-title">대학원 진학 상담</a>
-                        </div>
-                    </div>
-                </section>
+                </div>
             </div>
         </div>
     </main>
