@@ -5185,7 +5185,7 @@ body.dark-mode .stat-card * {
 .news-content {
     max-width: 800px;
     margin: 0 auto;
-    padding: var(--space-8) 0;
+    padding: 0 0 var(--space-8) 0;
 }
 
 .news-list {
@@ -5264,7 +5264,7 @@ body.dark-mode .stat-card * {
 .qna-content {
     max-width: 800px;
     margin: 0 auto;
-    padding: var(--space-8) 0;
+    padding: 0 0 var(--space-8) 0;
 }
 
 .qna-list {
@@ -5364,7 +5364,7 @@ body.dark-mode .stat-card * {
 .photo-content {
     max-width: 1200px;
     margin: 0 auto;
-    padding: var(--space-8) 0;
+    padding: 0 0 var(--space-8) 0;
 }
 
 .photo-gallery {
@@ -5431,7 +5431,7 @@ body.dark-mode .stat-card * {
 .schedule-content {
     max-width: 1000px;
     margin: 0 auto;
-    padding: var(--space-8) 0;
+    padding: 0 0 var(--space-8) 0;
 }
 
 .calendar-section {
