@@ -5685,3 +5685,288 @@ body.dark-mode .stat-card * {
 [data-theme="dark"] .info-card p {
     color: var(--text-secondary);
 }
+
+/* LINKS 페이지 스타일 */
+.links-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--space-8) 0;
+}
+
+.links-tabs {
+    display: flex;
+    gap: var(--space-2);
+    margin-bottom: var(--space-8);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tab-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-4);
+    background: var(--gray-100);
+    color: var(--gray-700);
+    border: 1px solid var(--gray-300);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.tab-btn:hover {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+
+.tab-btn.active {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.links-section {
+    margin-bottom: var(--space-8);
+}
+
+.links-section h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: var(--space-6);
+    color: var(--gray-800);
+    text-align: center;
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--space-4);
+}
+
+.link-item {
+    background: white;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--gray-200);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.link-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.link-card {
+    display: flex;
+    align-items: center;
+    padding: var(--space-4);
+    text-decoration: none;
+    color: inherit;
+    gap: var(--space-3);
+}
+
+.link-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--primary);
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.link-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.link-info h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 var(--space-1) 0;
+    color: var(--gray-800);
+    line-height: 1.4;
+}
+
+.link-info p {
+    font-size: 0.875rem;
+    color: var(--gray-600);
+    margin: 0;
+}
+
+.link-arrow {
+    color: var(--gray-400);
+    font-size: 0.875rem;
+    flex-shrink: 0;
+}
+
+.link-card:hover .link-arrow {
+    color: var(--primary);
+}
+
+/* Sitemap 페이지 스타일 */
+.sitemap-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: var(--space-8) 0;
+}
+
+.sitemap-structure {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-6);
+    margin-bottom: var(--space-12);
+}
+
+.sitemap-section {
+    background: white;
+    border-radius: 12px;
+    padding: var(--space-6);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--gray-200);
+}
+
+.sitemap-section h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: var(--space-4);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.sitemap-section h2 i {
+    font-size: 1.125rem;
+}
+
+.sitemap-links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.sitemap-link {
+    color: var(--gray-700);
+    text-decoration: none;
+    padding: var(--space-2) var(--space-3);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-size: 0.875rem;
+}
+
+.sitemap-link:hover {
+    background: var(--primary);
+    color: white;
+}
+
+.contact-info {
+    background: var(--gray-50);
+    border-radius: 12px;
+    padding: var(--space-8);
+    text-align: center;
+}
+
+.contact-info h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: var(--space-6);
+    color: var(--gray-800);
+}
+
+.contact-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-6);
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    text-align: left;
+}
+
+.contact-item i {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-top: var(--space-1);
+    flex-shrink: 0;
+}
+
+.contact-item h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 var(--space-1) 0;
+    color: var(--gray-800);
+}
+
+.contact-item p {
+    font-size: 0.875rem;
+    color: var(--gray-600);
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .links-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .sitemap-structure {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-details {
+        grid-template-columns: 1fr;
+    }
+    
+    .links-tabs {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .tab-btn {
+        justify-content: center;
+    }
+}
+
+/* 다크모드 스타일 */
+[data-theme="dark"] .link-item,
+[data-theme="dark"] .sitemap-section {
+    background: var(--bg-secondary);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .link-info h3,
+[data-theme="dark"] .sitemap-section h2,
+[data-theme="dark"] .contact-info h2,
+[data-theme="dark"] .contact-item h3 {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .link-info p,
+[data-theme="dark"] .contact-item p {
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .contact-info {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+}
