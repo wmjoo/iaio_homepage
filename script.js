@@ -547,11 +547,19 @@ const utils = {
                     const targetElement = document.getElementById(targetId);
                     
                     if (targetElement) {
+                        // section-header 영역을 찾아서 정확히 이동
+                        const sectionHeader = targetElement.querySelector('.section-header');
+                        let scrollTarget = targetElement;
+                        
+                        if (sectionHeader) {
+                            scrollTarget = sectionHeader;
+                        }
+                        
                         // PC에서는 상단 메뉴바 높이 고려
                         const isDesktop = window.innerWidth >= 1024;
-                        const offset = isDesktop ? 120 : 80;
+                        const offset = isDesktop ? 100 : 80;
                         
-                        const targetPosition = targetElement.offsetTop - offset;
+                        const targetPosition = scrollTarget.offsetTop - offset;
                         
                         window.scrollTo({
                             top: targetPosition,

@@ -142,8 +142,13 @@ body {
     
     /* PC 버전에서 상단 메뉴바 높이 고려한 여백 */
     .main-content {
-        margin-top: 100px !important;
-        padding-top: var(--space-6) !important;
+        margin-top: 80px !important;
+        padding-top: var(--space-4) !important;
+    }
+    
+    /* 메인 페이지만 특별한 여백 적용 */
+    body.index .main-content {
+        margin-top: 18px !important;
     }
 }
 
@@ -756,11 +761,11 @@ body {
 
 .nav-link {
     display: block;
-    padding: var(--space-4) 0;
+    padding: var(--space-3) 0;
     color: var(--gray-700);
     text-decoration: none;
     font-weight: 500;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     transition: all 0.2s ease;
     position: relative;
 }
@@ -3654,11 +3659,11 @@ body.dark-mode .stat-label {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--space-1) var(--space-4);
+    padding: var(--space-1) var(--space-3);
     background: white;
     max-width: 1200px;
     margin: 0 auto;
-    gap: var(--space-3);
+    gap: var(--space-2);
 }
 
 .header-left {
@@ -5555,7 +5560,7 @@ body.dark-mode .contact-item p {
 .main-nav {
     background: white;
     border-bottom: 1px solid var(--gray-200);
-    padding: var(--space-1) var(--space-4);
+    padding: var(--space-1) var(--space-3);
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -5565,7 +5570,7 @@ body.dark-mode .contact-item p {
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: var(--space-8);
+    gap: var(--space-6);
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
@@ -8065,8 +8070,8 @@ body.dark-mode .stat-card * {
         max-width: 220px;
         flex: 1;
         font-size: 0.95rem;
-        padding: var(--space-4) var(--space-5);
-        height: 2.8rem;
+        padding: var(--space-3) var(--space-4);
+        height: 2.4rem;
     }
     
     /* PC 버전에서 서브메뉴와 콘텐츠 간격 */
@@ -8177,13 +8182,13 @@ body.dark-mode .stat-card * {
     font-size: 1rem;
     font-weight: 600;
     margin: 0 0 var(--space-1) 0;
-    color: white;
+    color: white !important;
     line-height: 1.4;
 }
 
 .link-info p {
     font-size: 0.875rem;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8) !important;
     margin: 0;
 }
 
@@ -8397,6 +8402,34 @@ body.dark-mode .stat-card * {
 [data-theme="dark"] .contact-info h2,
 [data-theme="dark"] .contact-item h3 {
     color: white !important;
+}
+
+/* 다크모드에서 링크 텍스트 강제 적용 */
+body.dark-mode .link-info h3 {
+    color: white !important;
+}
+
+body.dark-mode .link-info p {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* 다크모드에서 링크 카드 배경 강제 적용 */
+body.dark-mode .link-item {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark)) !important;
+    border: 1px solid var(--primary) !important;
+}
+
+body.dark-mode .link-card {
+    color: white !important;
+}
+
+body.dark-mode .link-icon {
+    background: rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+}
+
+body.dark-mode .link-arrow {
+    color: rgba(255, 255, 255, 0.7) !important;
 }
 
 [data-theme="dark"] .link-info p,
