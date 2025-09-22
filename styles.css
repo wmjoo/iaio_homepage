@@ -66,6 +66,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 html {
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
@@ -112,6 +117,41 @@ body {
     right: 0;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 모바일 페이지 헤더 - 기본적으로 숨김 */
+.mobile-page-header {
+    display: none;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: white;
+    text-align: center;
+    padding: var(--space-3) var(--space-4);
+    margin-bottom: 20px !important;
+    margin-top: 0 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    min-height: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* PC 버전에서는 모바일 헤더 완전히 숨김 */
+@media (min-width: 1024px) {
+    .mobile-page-header {
+        display: none !important;
+    }
+    
+    /* PC 버전에서 상단 메뉴바 높이 고려한 여백 */
+    .main-content {
+        margin-top: 100px !important;
+        padding-top: var(--space-6) !important;
+    }
+}
+
+.mobile-page-header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 0.5px;
 }
 
 .mobile-header-content {
@@ -3741,6 +3781,12 @@ body.dark-mode .mobile-header .logo-link:hover {
     opacity: 0.8 !important;
 }
 
+/* 다크모드 모바일 페이지 헤더 */
+body.dark-mode .mobile-page-header {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark)) !important;
+    color: white !important;
+}
+
 body.dark-mode .header-link {
     color: #e2e8f0 !important;
 }
@@ -5734,18 +5780,18 @@ body.dark-mode .contact-item p {
     gap: var(--space-8);
     max-width: 1200px;
     margin: 0 auto;
-    padding: var(--space-8) var(--space-6);
-    margin-top: 120px; /* 고정 헤더를 위한 여백 */
+    padding: var(--space-6) var(--space-6);
+    margin-top: 80px; /* 고정 헤더를 위한 여백 */
 }
 
 .main-left {
-    min-height: 600px;
+    min-height: 400px;
 }
 
 .main-right {
     display: flex;
     flex-direction: column;
-    gap: var(--space-6);
+    gap: var(--space-3);
 }
 
 /* 연구실 소개 */
@@ -6022,7 +6068,12 @@ body.dark-mode .contact-item p {
     }
     
     .main-content {
-        margin-top: 80px;
+        margin-top: 20px;
+    }
+    
+    /* 모바일에서만 페이지 헤더 표시 */
+    .mobile-page-header {
+        display: flex !important;
     }
     
     /* 모바일 헤더 반응형 개선 */
@@ -6044,8 +6095,8 @@ body.dark-mode .contact-item p {
     
     .main-layout {
         grid-template-columns: 1fr;
-        gap: var(--space-6);
-        padding: var(--space-6);
+        gap: var(--space-2);
+        padding: var(--space-4) var(--space-4);
     }
     
     .main-left {
@@ -6070,11 +6121,12 @@ body.dark-mode .contact-item p {
 
 @media (max-width: 768px) {
     .main-content {
-        margin-top: 80px;
+        margin-top: 0 !important;
+        padding-top: 0 !important;
     }
     
     .main-layout {
-        padding: var(--space-4);
+        padding: var(--space-3) var(--space-3);
     }
     
     .lab-intro {
@@ -6943,7 +6995,8 @@ body.dark-mode .project-item:hover {
 
 @media (max-width: 480px) {
     .main-content {
-        margin-top: 80px;
+        margin-top: 0 !important;
+        padding-top: 0 !important;
     }
     
     .achievements-grid {
@@ -7974,13 +8027,17 @@ body.dark-mode .stat-card * {
 
 .links-tabs {
     display: flex;
-    gap: var(--space-3);
-    margin-bottom: var(--space-6);
+    gap: var(--space-2);
+    margin-bottom: var(--space-1);
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 0;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+/* 기본 탭 버튼 스타일 */
 .tab-btn {
     display: flex;
     align-items: center;
@@ -7998,6 +8055,36 @@ body.dark-mode .stat-card * {
     height: 2rem;
     box-sizing: border-box;
     line-height: 1;
+    justify-content: center;
+}
+
+/* PC 버전 탭 버튼 스타일 */
+@media (min-width: 1024px) {
+    .tab-btn {
+        min-width: 180px;
+        max-width: 220px;
+        flex: 1;
+        font-size: 0.95rem;
+        padding: var(--space-4) var(--space-5);
+        height: 2.8rem;
+    }
+    
+    /* PC 버전에서 서브메뉴와 콘텐츠 간격 */
+    .links-tabs {
+        margin-bottom: var(--space-8) !important;
+        margin-top: var(--space-4) !important;
+    }
+}
+
+/* 모바일 버전 탭 버튼 스타일 */
+@media (max-width: 1023px) {
+    .tab-btn {
+        flex: 0 0 calc(33.333% - var(--space-1));
+        min-width: 0;
+        font-size: 0.8rem;
+        padding: var(--space-2) var(--space-2);
+        margin-bottom: var(--space-2);
+    }
 }
 
 .tab-btn:hover {
@@ -8005,6 +8092,11 @@ body.dark-mode .stat-card * {
     color: white;
     border-color: var(--primary);
     transform: translateY(-1px);
+}
+
+/* 서브메뉴 버튼 클릭 시 스크롤 애니메이션 */
+.tab-btn {
+    scroll-behavior: smooth;
 }
 
 .tab-btn.active {
@@ -8273,14 +8365,7 @@ body.dark-mode .stat-card * {
         flex-wrap: wrap;
     }
     
-    .tab-btn {
-        flex: 0 0 calc(33.333% - var(--space-1));
-        min-width: 0;
-        justify-content: center;
-        font-size: 0.8rem;
-        padding: var(--space-2) var(--space-2);
-        margin-bottom: var(--space-2);
-    }
+    /* 모바일 탭 버튼은 위의 미디어 쿼리에서 처리됨 */
     
     .sub-header {
         gap: var(--space-3);

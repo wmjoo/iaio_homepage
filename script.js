@@ -15,6 +15,7 @@ class ModernMobileApp {
         this.setupTabs();
         this.setupThemeToggle();
         this.setupTopButton();
+        this.setupSubMenuScroll();
     }
 
     // 네비게이션 시스템
@@ -529,6 +530,37 @@ const utils = {
             
             console.log('TOP 버튼 이벤트 리스너가 설정되었습니다.');
         }, 100);
+    }
+
+    // 서브메뉴 버튼 스크롤 기능
+    setupSubMenuScroll() {
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        
+        tabButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                const href = button.getAttribute('href');
+                
+                // 앵커 링크인 경우 (예: #section-id)
+                if (href && href.startsWith('#')) {
+                    e.preventDefault();
+                    const targetId = href.substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    
+                    if (targetElement) {
+                        // PC에서는 상단 메뉴바 높이 고려
+                        const isDesktop = window.innerWidth >= 1024;
+                        const offset = isDesktop ? 120 : 80;
+                        
+                        const targetPosition = targetElement.offsetTop - offset;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
     }
 };
 
