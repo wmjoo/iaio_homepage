@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Materials - IAIO Lab</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔬</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔬</text></svg>">
+    <meta name="theme-color" content="#003876">
+    <meta name="description" content="IAIO Lab Research Materials - 연구 자료 게시판">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 헤더 -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>IAIO Lab</h1>
+                    <p>산업인공지능최적화 연구실</p>
+                </div>
+                <div class="header-actions">
+                    <a href="people.html" class="header-link">
+                        <i class="fas fa-users"></i>
+                    </a>
+                    <button class="theme-toggle" id="themeToggle" aria-label="다크모드 토글">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="menu-toggle" id="menuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 모바일 네비게이션 -->
+    <nav class="mobile-nav" id="mobileNav">
+        <div class="nav-menu" id="navMenu">
+            <div class="nav-controls">
+                <a href="sitemap.html" class="sitemap-link" aria-label="사이트맵">
+                    <i class="fas fa-sitemap"></i>
+                </a>
+                <button class="theme-toggle" id="themeToggle" aria-label="다크모드 토글">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">INTRODUCTION</a></li>
+                <li><a href="people.html">PEOPLE</a></li>
+                <li><a href="research.html">RESEARCH</a></li>
+                <li><a href="publications.html">PUBLICATIONS</a></li>
+                <li><a href="references.html">REFERENCES</a></li>
+                <li><a href="courses.html">COURSES</a></li>
+                <li class="nav-item">
+                    <a href="board.html" class="nav-link">BOARD</a>
+                    <ul class="sub-nav">
+                        <li><a href="news.html" class="sub-link">News</a></li>
+                        <li><a href="qna.html" class="sub-link">Q&A</a></li>
+                        <li><a href="photo.html" class="sub-link">Photo Album</a></li>
+                        <li><a href="schedule.html" class="sub-link">Schedule</a></li>
+                    </ul>
+                </li>
+                <li><a href="links.html">LINKS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 메인 콘텐츠 -->
+    <main class="main-content">
+        <!-- 페이지 헤더 -->
+        <section class="page-header">
+            <div class="header-content">
+                <h1>RESEARCH MATERIALS</h1>
+            </div>
+        </section>
+
+        <div class="container">
+            <!-- 네비게이션 버튼 -->
+            <div class="links-tabs">
+                <a href="references.html" class="tab-btn">
+                    <i class="fas fa-list"></i>
+                    All References
+                </a>
+                <a href="miscellaneous.html" class="tab-btn">
+                    <i class="fas fa-ellipsis-h"></i>
+                    Miscellaneous
+                </a>
+            </div>
+            
+            <div class="research-materials-content">
+                <!-- 게시판 테이블 -->
+                <div class="board-table">
+                    <table class="materials-table">
+                        <thead>
+                            <tr>
+                                <th class="col-number">번호</th>
+                                <th class="col-title">제목</th>
+                                <th class="col-file">파일</th>
+                                <th class="col-views">조회수</th>
+                                <th class="col-date">등록일</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col-number">6</td>
+                                <td class="col-title">
+                                    <a href="#" class="board-link">[SMOLab]2월 3일(수) 연구 세미나 발표자료</a>
+                                </td>
+                                <td class="col-file">
+                                    <i class="fas fa-file-pdf"></i>
+                                </td>
+                                <td class="col-views">199</td>
+                                <td class="col-date">2015-02-12</td>
+                            </tr>
+                            <tr>
+                                <td class="col-number">5</td>
+                                <td class="col-title">
+                                    <a href="#" class="board-link">[SMOLab]1월 28일(수) 연구 세미나 발표자료</a>
+                                </td>
+                                <td class="col-file">
+                                    <i class="fas fa-file-powerpoint"></i>
+                                </td>
+                                <td class="col-views">61</td>
+                                <td class="col-date">2015-02-12</td>
+                            </tr>
+                            <tr>
+                                <td class="col-number">4</td>
+                                <td class="col-title">
+                                    <a href="#" class="board-link">[SMOLab]1월 21일(수) 연구 세미나 발표자료</a>
+                                </td>
+                                <td class="col-file">
+                                    <i class="fas fa-file-pdf"></i>
+                                </td>
+                                <td class="col-views">40</td>
+                                <td class="col-date">2015-02-12</td>
+                            </tr>
+                            <tr>
+                                <td class="col-number">3</td>
+                                <td class="col-title">
+                                    <a href="#" class="board-link">[SMOLab]1월 14일(수) 연구 세미나 발표자료</a>
+                                </td>
+                                <td class="col-file">
+                                    <i class="fas fa-file-powerpoint"></i>
+                                </td>
+                                <td class="col-views">39</td>
+                                <td class="col-date">2015-02-12</td>
+                            </tr>
+                            <tr>
+                                <td class="col-number">2</td>
+                                <td class="col-title">
+                                    <a href="#" class="board-link">[SMOlab]1월 7일(수) 단일분류-LAD 세미나 : COMPLEMENT</a>
+                                </td>
+                                <td class="col-file">
+                                    <i class="fas fa-file-pdf"></i>
+                                </td>
+                                <td class="col-views">34</td>
+                                <td class="col-date">2015-02-12</td>
+                            </tr>
+                            <tr>
+                                <td class="col-number">1</td>
+                                <td class="col-title">
+                                    <a href="#" class="board-link">[SMOlab] FAB Layout 최적화 관련 세미나 2014년 자료</a>
+                                </td>
+                                <td class="col-file">
+                                    <i class="fas fa-file-powerpoint"></i>
+                                </td>
+                                <td class="col-views">47</td>
+                                <td class="col-date">2015-02-12</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- 페이지네이션 -->
+                <div class="pagination">
+                    <button class="page-btn prev" disabled>
+                        <i class="fas fa-chevron-left"></i>
+                        이전
+                    </button>
+                    <div class="page-numbers">
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                    </div>
+                    <button class="page-btn next">
+                        다음
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>IAIO Lab</h3>
+                    <p>산업인공지능최적화 연구실</p>
+                    <p>Industrial Artificial Intelligence Optimization Laboratory</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 아주대학교 팔달관 815호</p>
+                    <p><i class="fas fa-phone"></i> +82-31-219-2670</p>
+                    <p><i class="fas fa-envelope"></i> choijy@ajou.ac.kr</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 IAIO Lab. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 스크립트 -->
+    <script src="script.js"></script>
+</body>
+</html>
