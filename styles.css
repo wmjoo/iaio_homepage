@@ -1394,6 +1394,44 @@ body {
     margin: 0;
 }
 
+/* 서브 헤더 스타일 */
+.sub-header {
+    display: flex;
+    gap: var(--space-6);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--space-8);
+    flex-wrap: wrap;
+}
+
+.sub-header-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-4);
+    background: var(--gray-100);
+    border-radius: var(--radius-lg);
+    color: var(--gray-700);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.sub-header-item i {
+    font-size: 1.25rem;
+    color: var(--primary);
+}
+
+.sub-header-item:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.sub-header-item:hover i {
+    color: white;
+}
+
 /* 소개 페이지 스타일 */
 .intro-content {
     display: grid;
@@ -6056,6 +6094,16 @@ body.dark-mode .stat-card * {
         font-size: 0.8rem;
         padding: var(--space-2) var(--space-2);
         margin-bottom: var(--space-2);
+    }
+    
+    .sub-header {
+        gap: var(--space-3);
+        flex-wrap: wrap;
+    }
+    
+    .sub-header-item {
+        padding: var(--space-2) var(--space-3);
+        font-size: 0.875rem;
     }
     
     /* 모바일 네비게이션 높이 확실히 설정 */
