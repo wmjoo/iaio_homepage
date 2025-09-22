@@ -31,94 +31,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- 데스크톱 헤더 -->
-    <header class="desktop-header">
-        <div class="header-top">
-            <div class="header-left">
-                <a href="index.html" class="header-link">HOME</a>
-                <button class="dark-mode-toggle" id="darkModeToggle">
-                    <i class="fas fa-moon"></i>
-                </button>
-            </div>
-            <div class="header-right">
-                <a href="member.html" class="header-link">LOGIN</a>
-                <a href="sitemap.html" class="header-link">SITEMAP</a>
-            </div>
-        </div>
-        
-        <!-- 메인 네비게이션 -->
-        <nav class="main-nav">
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a href="intro.html" class="nav-link">INTRODUCTION</a>
-                    <div class="sub-nav">
-                        <a href="intro.html" class="sub-link">WHY OPTIMIZATION?</a>
-                        <a href="intro.html" class="sub-link">ABOUT OUR LAB</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a href="people.html" class="nav-link">PEOPLE</a>
-                    <div class="sub-nav">
-                        <a href="people.html" class="sub-link">PROFESSOR</a>
-                        <a href="people.html" class="sub-link">GRADUATE STUDENTS</a>
-                        <a href="people.html" class="sub-link">INTERN STUDENTS</a>
-                        <a href="people.html" class="sub-link">ALUMNI</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a href="research.html" class="nav-link">RESEARCH</a>
-                    <div class="sub-nav">
-                        <a href="research.html" class="sub-link">연구 FIELD</a>
-                        <a href="research.html" class="sub-link">PROJECTS</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a href="publications.html" class="nav-link">PUBLICATIONS</a>
-                    <div class="sub-nav">
-                        <a href="publications.html" class="sub-link">INTERNATIONAL JOURNALS</a>
-                        <a href="publications.html" class="sub-link">DOMESTIC JOURNALS</a>
-                        <a href="publications.html" class="sub-link">INTERNATIONAL CONFERENCES</a>
-                        <a href="publications.html" class="sub-link">DOMESTIC CONFERENCES</a>
-                        <a href="publications.html" class="sub-link">MISCELLANEOUS</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a href="references.html" class="nav-link">REFERENCES</a>
-                    <div class="sub-nav">
-                        <a href="references.html" class="sub-link">연구 MATERIALS</a>
-                        <a href="references.html" class="sub-link">PROJECT MATERIALS</a>
-                        <a href="references.html" class="sub-link">MISCELLANEOUS</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a href="courses.html" class="nav-link">COURSES</a>
-                    <div class="sub-nav">
-                        <a href="courses.html" class="sub-link">UNDERGRADUATE</a>
-                        <a href="courses.html" class="sub-link">GRADUATE</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a href="board.html" class="nav-link">BOARD</a>
-                    <div class="sub-nav">
-                        <a href="news.html" class="sub-link">NEWS</a>
-                        <a href="qna.html" class="sub-link">Q&A</a>
-                        <a href="photo.html" class="sub-link">PHOTO ALBUM</a>
-                        <a href="schedule.html" class="sub-link">SCHEDULE</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a href="links.html" class="nav-link">LINKS</a>
-                    <div class="sub-nav">
-                        <a href="links.html" class="sub-link">LINKS</a>
-                        <a href="sitemap.html" class="sub-link active">SITEMAP</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- 모바일 네비게이션 -->
-    <nav class="mobile-nav">
+    <!-- 헤더는 header-loader.js에 의해 동적으로 로드됩니다    <nav class="mobile-nav">
         <div class="nav-header">
             <a href="index.html" class="logo-link">
                 <div class="logo">
@@ -127,6 +40,9 @@
                 </div>
             </a>
             <div class="nav-controls">
+                <a href="member.html" class="login-link" aria-label="로그인">
+                    <i class="fas fa-user"></i>
+                </a>
                 <a href="sitemap.html" class="sitemap-link" aria-label="사이트맵">
                     <i class="fas fa-sitemap"></i>
                 </a>
@@ -150,7 +66,7 @@
                 <li><a href="publications.html" class="nav-link">PUBLICATIONS</a></li>
                 <li><a href="references.html" class="nav-link">REFERENCES</a></li>
                 <li><a href="courses.html" class="nav-link">COURSES</a></li>
-                <li><a href="board.html" class="nav-link">BOARD</a></li>
+                <li><a href="news.html" class="nav-link">BOARD</a></li>
                 <li><a href="links.html" class="nav-link">LINKS</a></li>
                 <li><a href="member.html" class="nav-link">MEMBER</a></li>
             </ul>
@@ -192,7 +108,7 @@
                     <div class="sitemap-section">
                         <h2><i class="fas fa-info-circle"></i> INTRODUCTION</h2>
                         <div class="sitemap-links">
-                            <a href="intro.html#why-optimization">Why Optimization?</a> • 
+                            <a href="intro.html#why-optimization">Why Optimization?</a> 
                             <a href="intro.html#about-lab">About Our Lab</a>
                         </div>
                     </div>
@@ -200,9 +116,9 @@
                     <div class="sitemap-section">
                         <h2><i class="fas fa-users"></i> PEOPLE</h2>
                         <div class="sitemap-links">
-                            <a href="people.html#professor">Professor</a> • 
-                            <a href="people.html#graduate-students">Graduate Students</a> • 
-                            <a href="people.html#intern-students">Intern Students</a> • 
+                            <a href="people.html#professor">Professor</a> 
+                            <a href="people.html#graduate-students">Graduate Students</a> 
+                            <a href="people.html#intern-students">Intern Students</a> 
                             <a href="people.html#alumni">Alumni</a>
                         </div>
                     </div>
@@ -210,7 +126,7 @@
                     <div class="sitemap-section">
                         <h2><i class="fas fa-flask"></i> RESEARCH</h2>
                         <div class="sitemap-links">
-                            <a href="research.html#research-fields">Research Field</a> • 
+                            <a href="research.html#research-fields">Research Field</a> 
                             <a href="research.html#projects">Projects</a>
                         </div>
                     </div>
@@ -218,10 +134,10 @@
                     <div class="sitemap-section">
                         <h2><i class="fas fa-book"></i> PUBLICATIONS</h2>
                         <div class="sitemap-links">
-                            <a href="publications.html#international">International Journals</a> • 
-                            <a href="publications.html#domestic">Domestic Journals</a> • 
-                            <a href="publications.html#conferences">International Conferences</a> • 
-                            <a href="publications.html#domestic-conf">Domestic Conferences</a> • 
+                            <a href="publications.html#international">International Journals</a> 
+                            <a href="publications.html#domestic">Domestic Journals</a> 
+                            <a href="publications.html#conferences">International Conferences</a> 
+                            <a href="publications.html#domestic-conf">Domestic Conferences</a> 
                             <a href="publications.html#misc">Miscellaneous</a>
                         </div>
                     </div>
@@ -229,7 +145,7 @@
                     <div class="sitemap-section">
                         <h2><i class="fas fa-folder"></i> REFERENCES</h2>
                         <div class="sitemap-links">
-                            <a href="references.html#research-materials">Research Materials</a> • 
+                            <a href="references.html#research-materials">Research Materials</a> 
                             <a href="references.html#miscellaneous">Miscellaneous</a>
                         </div>
                     </div>
@@ -237,7 +153,7 @@
                     <div class="sitemap-section">
                         <h2><i class="fas fa-graduation-cap"></i> COURSES</h2>
                         <div class="sitemap-links">
-                            <a href="courses.html#undergraduate">Undergraduate</a> • 
+                            <a href="courses.html#undergraduate">Undergraduate</a> 
                             <a href="courses.html#graduate">Graduate</a>
                         </div>
                     </div>
@@ -245,9 +161,9 @@
                     <div class="sitemap-section">
                         <h2><i class="fas fa-clipboard-list"></i> BOARD</h2>
                         <div class="sitemap-links">
-                            <a href="news.html">News</a> • 
-                            <a href="qna.html">Q&A</a> • 
-                            <a href="photo.html">Photo Album</a> • 
+                            <a href="news.html">News</a> 
+                            <a href="qna.html">Q&A</a> 
+                            <a href="photo.html">Photo Album</a> 
                             <a href="schedule.html">Schedule</a>
                         </div>
                     </div>
@@ -255,15 +171,15 @@
                     <div class="sitemap-section">
                         <h2><i class="fas fa-link"></i> LINKS</h2>
                         <div class="sitemap-links">
-                            <a href="links.html" class="sitemap-link">Links</a>
-                            <a href="sitemap.html" class="sitemap-link">Sitemap</a>
+                            <a href="links.html">Links</a>
+                            <a href="sitemap.html">Sitemap</a>
                         </div>
                     </div>
 
                     <div class="sitemap-section">
                         <h2><i class="fas fa-user"></i> MEMBER</h2>
                         <div class="sitemap-links">
-                            <a href="member.html" class="sitemap-link">Member</a>
+                            <a href="member.html">Member</a>
                         </div>
                     </div>
                 </div>
@@ -314,6 +230,7 @@
     </button>
 
     <script src="script.js"></script>
+    <script src="header-loader.js"></script>
     <script>
         // 다크모드 토글 기능
         const darkModeToggle = document.getElementById('darkModeToggle');

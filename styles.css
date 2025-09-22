@@ -100,6 +100,60 @@ body {
     color: white;
 }
 
+/* 모바일 헤더 - 통일된 스타일 */
+.mobile-header {
+    display: block;
+    background: white;
+    border-bottom: 1px solid var(--gray-200);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-3) var(--space-4);
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.mobile-header .logo h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 0;
+    line-height: 1.2;
+}
+
+.mobile-header .logo p {
+    font-size: 0.75rem;
+    color: var(--gray-600);
+    margin: 0;
+    line-height: 1.2;
+}
+
+.mobile-header .nav-controls {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    flex-shrink: 0;
+}
+
+.mobile-header .logo-link {
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.2s ease;
+}
+
+.mobile-header .logo-link:hover {
+    opacity: 0.8;
+}
+
 /* 모바일 네비게이션 - 세련된 디자인 */
 .mobile-nav {
     background: rgba(255, 255, 255, 0.95);
@@ -129,6 +183,29 @@ body {
     gap: var(--space-2);
 }
 
+.login-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: white;
+    color: var(--primary);
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-link:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
 .sitemap-link {
     display: flex;
     align-items: center;
@@ -137,7 +214,7 @@ body {
     height: 40px;
     background: white;
     color: var(--primary);
-    border: 1px solid var(--gray-300);
+    border: none;
     border-radius: 8px;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -148,14 +225,13 @@ body {
 .sitemap-link:hover {
     background: var(--primary);
     color: white;
-    border-color: var(--primary);
     transform: translateY(-1px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .theme-toggle {
-    background: none;
-    border: none;
+    background: var(--gray-100);
+    border: 1px solid var(--gray-300);
     padding: var(--space-2);
     border-radius: var(--radius-md);
     color: var(--gray-600);
@@ -167,11 +243,14 @@ body {
     width: 44px;
     height: 44px;
     margin-right: var(--space-1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .theme-toggle:hover {
-    background: var(--gray-100);
-    color: var(--gray-800);
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
 }
 
 .theme-toggle i {
@@ -550,8 +629,8 @@ body {
 }
 
 .menu-toggle {
-    background: none;
-    border: none;
+    background: var(--gray-100);
+    border: 1px solid var(--gray-300);
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -563,10 +642,13 @@ body {
     height: 44px;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .menu-toggle:hover {
-    background: var(--gray-100);
+    background: var(--primary);
+    border-color: var(--primary);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
 }
 
 .menu-toggle span {
@@ -575,6 +657,10 @@ body {
     background: var(--gray-700);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 1px;
+}
+
+.menu-toggle:hover span {
+    background: white;
 }
 
 .menu-toggle.active span:nth-child(1) {
@@ -643,20 +729,32 @@ body {
     padding-left: var(--space-2);
 }
 
-.nav-link::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 0;
-    height: 2px;
-    background: var(--gradient-primary);
-    transition: width 0.3s ease;
+/* 상단 헤더 네비게이션 호버 효과 개선 */
+.desktop-header .nav-link {
+    position: relative;
+    overflow: hidden;
 }
 
-.nav-link:hover::before {
-    width: 20px;
+.desktop-header .nav-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.desktop-header .nav-link:hover::before {
+    left: 100%;
+}
+
+.desktop-header .nav-link:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
 }
 
 /* 메인 콘텐츠 */
@@ -1230,6 +1328,39 @@ body {
     body {
         background: var(--gray-50);
         color: var(--gray-800);
+    }
+    
+    .mobile-header {
+        background: var(--gray-800);
+        border-bottom-color: var(--gray-700);
+    }
+    
+    .mobile-header .logo h1 {
+        color: var(--gray-100) !important;
+    }
+    
+    .mobile-header .logo p {
+        color: var(--gray-400) !important;
+    }
+    
+    .login-link {
+        background: var(--gray-700) !important;
+        color: var(--gray-100) !important;
+    }
+    
+    .login-link:hover {
+        background: var(--primary) !important;
+        color: white !important;
+    }
+    
+    .sitemap-link {
+        background: var(--gray-700) !important;
+        color: var(--gray-100) !important;
+    }
+    
+    .sitemap-link:hover {
+        background: var(--primary) !important;
+        color: white !important;
     }
     
     .mobile-nav {
@@ -3482,11 +3613,11 @@ body.dark-mode .stat-label {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--space-2) var(--space-6);
+    padding: var(--space-1) var(--space-4);
     background: white;
     max-width: 1200px;
     margin: 0 auto;
-    gap: var(--space-4);
+    gap: var(--space-3);
 }
 
 .header-left {
@@ -3514,19 +3645,25 @@ body.dark-mode .stat-label {
 }
 
 .dark-mode-toggle {
-    background: none;
+    background: var(--gray-100);
     border: 1px solid var(--gray-300);
     border-radius: var(--radius-full);
-    padding: var(--space-2);
+    padding: var(--space-1);
     cursor: pointer;
     transition: all 0.3s ease;
     color: var(--gray-600);
     font-size: 0.9rem;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .dark-mode-toggle:hover {
-    background: var(--gray-100);
-    border-color: var(--gray-400);
+    background: var(--primary);
+    border-color: var(--primary);
+    color: white;
 }
 
 /* 다크모드 스타일 */
@@ -3536,7 +3673,12 @@ body.dark-mode .stat-label {
 }
 
 .dark-mode .desktop-header {
-    background: var(--gray-800);
+    background: var(--gray-800) !important;
+    border-bottom-color: var(--gray-700);
+}
+
+.dark-mode .main-nav {
+    background: var(--gray-800) !important;
     border-bottom-color: var(--gray-700);
 }
 
@@ -3548,8 +3690,194 @@ body.dark-mode .stat-label {
     color: var(--gray-400);
 }
 
+/* 다크모드 상단 헤더 스타일 - 강제 적용 */
+.dark-mode .header-top {
+    background: var(--gray-800) !important;
+    border-bottom: 1px solid var(--gray-700);
+}
+
+.dark-mode .mobile-header {
+    background: var(--gray-800) !important;
+    border-bottom: 1px solid var(--gray-700);
+}
+
+/* 다크모드 강제 적용 */
+body.dark-mode .header-top {
+    background: #1e293b !important;
+}
+
+body.dark-mode .mobile-header {
+    background: #1e293b !important;
+}
+
+body.dark-mode .desktop-header {
+    background: #1e293b !important;
+}
+
+body.dark-mode .main-nav {
+    background: #1e293b !important;
+}
+
+/* 다크모드 텍스트 색상 강제 적용 */
+body.dark-mode .mobile-header .logo h1 {
+    color: #f1f5f9 !important;
+}
+
+body.dark-mode .mobile-header .logo p {
+    color: #94a3b8 !important;
+}
+
+body.dark-mode .mobile-header .logo-link {
+    color: inherit !important;
+}
+
+body.dark-mode .mobile-header .logo-link:hover {
+    opacity: 0.8 !important;
+}
+
+body.dark-mode .header-link {
+    color: #e2e8f0 !important;
+}
+
+body.dark-mode .nav-link {
+    color: #cbd5e1 !important;
+}
+
+/* 다크모드 모바일 헤더 버튼 강제 적용 */
+body.dark-mode .login-link {
+    background: #334155 !important;
+    color: #f1f5f9 !important;
+}
+
+body.dark-mode .sitemap-link {
+    background: #334155 !important;
+    color: #f1f5f9 !important;
+}
+
+body.dark-mode .theme-toggle {
+    background: #475569 !important;
+    color: #ffffff !important;
+    border: 2px solid #64748b !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+}
+
+body.dark-mode .theme-toggle i {
+    color: #ffffff !important;
+}
+
+body.dark-mode .theme-toggle:hover {
+    background: #3b82f6 !important;
+    color: white !important;
+    border-color: #3b82f6 !important;
+    box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3) !important;
+}
+
+/* 다크모드 햄버거 메뉴 버튼 강화 */
+body.dark-mode .menu-toggle {
+    background: #475569 !important;
+    border: 2px solid #64748b !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+}
+
+body.dark-mode .menu-toggle span {
+    background: #ffffff !important;
+}
+
+body.dark-mode .menu-toggle:hover {
+    background: #3b82f6 !important;
+    border-color: #3b82f6 !important;
+    box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3) !important;
+}
+
+body.dark-mode .menu-toggle:hover span {
+    background: #ffffff !important;
+}
+
+/* 모바일 전용 다크모드 토글 버튼 */
+.theme-toggle-mobile {
+    display: flex;
+    background: var(--gray-100);
+    border: 1px solid var(--gray-300);
+    padding: var(--space-2);
+    border-radius: var(--radius-md);
+    color: var(--gray-600);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.theme-toggle-mobile:hover {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+.theme-toggle-mobile i {
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+}
+
+.theme-toggle-mobile:hover i {
+    transform: rotate(20deg);
+}
+
+/* 모바일 토글 버튼 항상 표시 */
+
+body.dark-mode .theme-toggle-mobile {
+    background: #f59e0b !important;
+    color: #ffffff !important;
+    border: 2px solid #f59e0b !important;
+    box-shadow: 0 2px 4px rgba(245, 158, 11, 0.3) !important;
+}
+
+body.dark-mode .theme-toggle-mobile:hover {
+    background: #d97706 !important;
+    color: white !important;
+    border-color: #d97706 !important;
+    box-shadow: 0 4px 8px rgba(217, 119, 6, 0.4) !important;
+}
+
+body.dark-mode .theme-toggle-mobile i {
+    color: #ffffff !important;
+}
+
+/* 다크모드에서 해 모양 아이콘으로 변경 */
+body.dark-mode .theme-toggle-mobile i.fa-moon {
+    display: none;
+}
+
+body.dark-mode .theme-toggle-mobile i.fa-sun {
+    display: block !important;
+}
+
+.theme-toggle-mobile i.fa-sun {
+    display: none;
+}
+
 .dark-mode .header-link {
-    color: var(--gray-300);
+    color: var(--gray-200);
+}
+
+.dark-mode .header-link:hover {
+    color: white;
+    opacity: 1;
+}
+
+.dark-mode .dark-mode-toggle {
+    background: var(--gray-700);
+    color: var(--gray-200);
+    border: 1px solid var(--gray-600);
+}
+
+.dark-mode .dark-mode-toggle:hover {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
 }
 
 .dark-mode .main-nav {
@@ -3558,7 +3886,11 @@ body.dark-mode .stat-label {
 }
 
 .dark-mode .nav-link {
-    color: var(--gray-300);
+    color: var(--gray-300) !important;
+}
+
+.dark-mode .sub-link {
+    color: var(--gray-200) !important;
 }
 
 .dark-mode .nav-link:hover {
@@ -3579,11 +3911,15 @@ body.dark-mode .stat-label {
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 500;
-    transition: opacity 0.2s ease;
+    padding: var(--space-1) var(--space-2);
+    border-radius: var(--radius-sm);
+    transition: all 0.2s ease;
 }
 
 .header-link:hover {
-    opacity: 0.8;
+    background: var(--primary);
+    color: white;
+    opacity: 1;
 }
 
 .lab-logo a {
@@ -3600,7 +3936,7 @@ body.dark-mode .stat-label {
 .main-nav {
     background: white;
     border-bottom: 1px solid var(--gray-200);
-    padding: var(--space-2) var(--space-6);
+    padding: var(--space-1) var(--space-4);
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -3639,7 +3975,7 @@ body.dark-mode .stat-label {
 
 .nav-link {
     display: block;
-    padding: var(--space-4) var(--space-6);
+    padding: var(--space-2) var(--space-4);
     color: var(--gray-700);
     text-decoration: none;
     font-weight: 500;
@@ -3672,6 +4008,32 @@ body.dark-mode .stat-label {
     color: var(--primary);
 }
 
+/* 데스크톱 네비게이션 호버 개선 */
+.desktop-header .nav-link:hover {
+    background: var(--primary);
+    color: white;
+}
+
+.desktop-header .sub-link:hover {
+    background: var(--primary);
+    color: white;
+}
+
+/* 다크모드에서의 호버 개선 */
+.dark-mode .desktop-header .nav-link:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+.dark-mode .desktop-header .sub-link:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.2);
+}
+
 .sub-nav {
     position: absolute;
     top: 100%;
@@ -3702,7 +4064,31 @@ body.dark-mode .stat-label {
     text-decoration: none;
     font-size: 0.9rem;
     border-radius: var(--radius-sm);
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
+}
+
+.sub-link:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateX(4px);
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.2);
+}
+
+/* 다크모드 서브 네비게이션 */
+.dark-mode .sub-nav {
+    background: var(--gray-800);
+    border-color: var(--gray-600);
+}
+
+.dark-mode .sub-link {
+    color: var(--gray-200);
+}
+
+.dark-mode .sub-link:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateX(4px);
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.2);
 }
 
 .sub-link:hover,
@@ -3978,6 +4364,10 @@ body.dark-mode .stat-label {
         display: block;
     }
     
+    .mobile-header {
+        display: none;
+    }
+    
     .mobile-nav {
         display: none;
     }
@@ -3992,12 +4382,33 @@ body.dark-mode .stat-label {
         display: none;
     }
     
+    .mobile-header {
+        display: block;
+    }
+    
     .mobile-nav {
         display: block;
     }
     
     .main-content {
         margin-top: 80px;
+    }
+    
+    /* 모바일 헤더 반응형 개선 */
+    .mobile-header-content {
+        padding: var(--space-2) var(--space-3);
+    }
+    
+    .mobile-header .logo h1 {
+        font-size: 1.1rem;
+    }
+    
+    .mobile-header .logo p {
+        font-size: 0.7rem;
+    }
+    
+    .mobile-header .nav-controls {
+        gap: var(--space-1);
     }
     
     .main-layout {
@@ -4812,6 +5223,7 @@ body.dark-mode .stat-label {
     width: 100%;
     border-collapse: collapse;
     font-size: 0.9rem;
+    table-layout: fixed;
 }
 
 .materials-table thead {
@@ -4827,9 +5239,11 @@ body.dark-mode .stat-label {
 }
 
 .materials-table td {
-    padding: var(--space-4) var(--space-3);
+    padding: var(--space-3) var(--space-2);
     border-bottom: 1px solid var(--gray-100);
     vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .materials-table tbody tr:hover {
@@ -4837,28 +5251,31 @@ body.dark-mode .stat-label {
 }
 
 .col-number {
-    width: 60px;
+    width: 80px;
     text-align: center;
 }
 
 .col-title {
     text-align: left;
     min-width: 300px;
+    overflow: visible;
+    text-overflow: unset;
 }
 
 .col-file {
-    width: 60px;
-    text-align: center;
-}
-
-.col-views {
     width: 80px;
     text-align: center;
 }
 
-.col-date {
+.col-views {
     width: 100px;
     text-align: center;
+}
+
+.col-date {
+    width: 120px;
+    text-align: center;
+    white-space: nowrap;
 }
 
 .board-link {
