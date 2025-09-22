@@ -4932,6 +4932,89 @@ body.dark-mode .contact-item p {
     color: var(--gray-200) !important;
 }
 
+/* About Lab 섹션 문단 간격 조정 */
+.content-item p {
+    margin-bottom: var(--space-8);
+    line-height: 1.7;
+}
+
+.content-item p:last-child {
+    margin-bottom: 0;
+}
+
+/* Section Content 스타일 */
+.section-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--space-6);
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    line-height: 1.7;
+}
+
+.section-content h3 {
+    color: var(--gray-800);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: var(--space-6) 0 var(--space-4) 0;
+    padding-bottom: var(--space-2);
+    border-bottom: 2px solid var(--primary);
+}
+
+.section-content h3:first-child {
+    margin-top: 0;
+}
+
+.section-content p {
+    color: var(--gray-700);
+    margin-bottom: var(--space-6);
+    line-height: 1.7;
+}
+
+.section-content p:last-child {
+    margin-bottom: 0;
+}
+
+.section-content ul {
+    color: var(--gray-700);
+    margin-bottom: var(--space-6);
+    padding-left: var(--space-6);
+}
+
+.section-content ul li {
+    margin-bottom: var(--space-2);
+    line-height: 1.6;
+}
+
+.section-content ul ul {
+    margin-top: var(--space-2);
+    margin-bottom: 0;
+}
+
+/* 다크모드 Section Content */
+body.dark-mode .section-content {
+    background: var(--gray-800) !important;
+    color: var(--gray-200) !important;
+}
+
+body.dark-mode .section-content h3 {
+    color: var(--gray-100) !important;
+    border-bottom-color: var(--primary) !important;
+}
+
+body.dark-mode .section-content p {
+    color: var(--gray-200) !important;
+}
+
+body.dark-mode .section-content ul {
+    color: var(--gray-200) !important;
+}
+
+body.dark-mode .section-content ul li {
+    color: var(--gray-200) !important;
+}
+
 /* Contact Information 반응형 그리드 */
 .contact-grid {
     display: grid;
