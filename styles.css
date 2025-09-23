@@ -6338,6 +6338,7 @@ body.dark-mode .contact-item p {
     .mobile-page-header {
         display: flex !important;
         margin-top: 65px !important;
+        margin-bottom: var(--space-1) !important;
     }
     
     /* 모바일 헤더 반응형 개선 */
@@ -8319,7 +8320,7 @@ body.dark-mode .stat-card * {
     /* PC 버전에서 서브메뉴와 콘텐츠 간격 */
     .links-tabs {
         margin-bottom: var(--space-8) !important;
-        margin-top: var(--space-4) !important;
+        margin-top: var(--space-1) !important;
     }
 }
 
