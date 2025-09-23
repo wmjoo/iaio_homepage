@@ -2178,33 +2178,7 @@ body.dark-mode .contact-item h4 {
 
 /* Remove old conflicting styles - now handled by professor-details-grid */
 
-.education-item,
-.experience-item {
-    display: flex;
-    align-items: flex-start;
-    gap: var(--space-2);
-    margin-bottom: var(--space-3);
-}
-
-.education-item i,
-.experience-item i {
-    font-size: 0.5rem;
-    color: var(--primary);
-    margin-top: 0.5rem;
-    flex-shrink: 0;
-}
-
-.education-item div p,
-.experience-item div p {
-    margin: 0;
-    color: var(--gray-700);
-    line-height: 1.5;
-}
-
-.education-item div p:first-child {
-    font-weight: 600;
-    color: var(--gray-800);
-}
+/* Remove old conflicting styles - now handled by professor-details-grid */
 
 .position {
     font-size: 1.1rem;
@@ -7693,10 +7667,7 @@ body.dark-mode .stat-card * {
 
 /* Remove old conflicting dark mode styles - now handled by professor-details-grid */
 
-.dark-mode .education-item i,
-.dark-mode .experience-item i {
-    color: var(--primary-light);
-}
+/* Remove old conflicting dark mode styles - now handled by professor-details-grid */
 
 /* 페이지 헤더 스타일 */
 .page-header {
