@@ -43,7 +43,7 @@
     
     /* 간격 */
     --space-1: 0.25rem;
-    --space-2: 0.5rem;
+    --space-2: 0.25rem;
     --space-3: 0.75rem;
     --space-4: 1rem;
     --space-5: 1.25rem;
@@ -130,7 +130,7 @@ body {
     color: white;
     text-align: center;
     padding: var(--space-2) var(--space-4);
-    margin-bottom: var(--space-2) !important;
+    /* margin-bottom: var(--space-2) !important; */
     margin-top: 0 !important;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
     min-height: 45px;
@@ -3498,15 +3498,16 @@ body.dark-mode .stat-label {
 }
 
 .tab-btn {
-    background: var(--gray-100);
-    color: var(--gray-700);
-    border: none;
-    padding: var(--space-3) var(--space-4);
-    border-radius: var(--radius-full);
-    font-weight: 500;
+    background: var(--gray-50);
+    color: var(--gray-800);
+    border: 1px solid var(--gray-200);
+    padding: var(--space-3) var(--space-5);
+    border-radius: var(--radius-lg);
+    font-weight: 600;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
     white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .tab-btn.active {
@@ -3515,7 +3516,11 @@ body.dark-mode .stat-label {
 }
 
 .tab-btn:hover:not(.active) {
-    background: var(--gray-200);
+    background: var(--gray-100);
+    border-color: var(--primary);
+    color: var(--primary);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .write-btn {
