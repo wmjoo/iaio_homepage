@@ -6332,6 +6332,7 @@ body.dark-mode .contact-item p {
     /* 모바일에서만 페이지 헤더 표시 */
     .mobile-page-header {
         display: flex !important;
+        margin-top: 60px !important;
     }
     
     /* 모바일 헤더 반응형 개선 */
