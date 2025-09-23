@@ -817,88 +817,7 @@ body {
 }
 
 /* 히어로 섹션 - 세련된 디자인 */
-.hero {
-    background: var(--gradient-primary);
-    color: white;
-    padding: var(--space-16) var(--space-8);
-    border-radius: var(--radius-2xl);
-    margin-bottom: var(--space-6);
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-    opacity: 0.1;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 1;
-}
-
-.hero h2 {
-    font-size: 2.2rem;
-    font-weight: 800;
-    margin-bottom: var(--space-5);
-    letter-spacing: -0.025em;
-    line-height: 1.1;
-}
-
-.hero p {
-    font-size: 1rem;
-    margin-bottom: var(--space-6);
-    opacity: 0.95;
-    line-height: 1.5;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.cta-button {
-    background: rgba(255, 255, 255, 0.15);
-    color: white;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    padding: var(--space-4) var(--space-8);
-    border-radius: var(--radius-full);
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    position: relative;
-    overflow: hidden;
-}
-
-.cta-button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transition: left 0.5s ease;
-}
-
-.cta-button:hover::before {
-    left: 100%;
-}
-
-.cta-button:hover {
-    background: rgba(255, 255, 255, 0.25);
-    border-color: rgba(255, 255, 255, 0.5);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
-}
+/* Hero and CTA styles removed - not used in current pages */
 
 /* 섹션 공통 스타일 */
 .section-header {
@@ -941,26 +860,10 @@ body {
     font-size: 1.5rem;
 }
 
-.more-link {
-    color: var(--primary);
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 600;
-    padding: var(--space-2) var(--space-4);
-    border-radius: var(--radius-md);
-    transition: all 0.2s ease;
-    position: relative;
-}
-
-.more-link:hover {
-    background: var(--gray-100);
-    color: var(--primary-dark);
-}
+/* More link styles removed - not used */
 
 /* 카드 스타일 */
-.notice-section,
-.gallery-section,
-.qa-section {
+.notice-section {
     background: white;
     padding: var(--space-8);
     border-radius: var(--radius-xl);
@@ -970,9 +873,7 @@ body {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.notice-section:hover,
-.gallery-section:hover,
-.qa-section:hover {
+.notice-section:hover {
     box-shadow: var(--shadow-md);
     transform: translateY(-2px);
 }
@@ -1039,92 +940,11 @@ body {
     color: var(--primary);
 }
 
-/* 갤러리 섹션 */
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-4);
-}
+/* Gallery styles removed - not used */
 
-.gallery-item {
-    aspect-ratio: 4/3;
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    box-shadow: var(--shadow-sm);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-    cursor: pointer;
-}
+/* Gallery item styles removed - not used */
 
-.gallery-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--gradient-primary);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 1;
-}
-
-.gallery-item:hover::before {
-    opacity: 0.1;
-}
-
-.gallery-item:hover {
-    transform: scale(1.02);
-    box-shadow: var(--shadow-lg);
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.gallery-item:hover img {
-    transform: scale(1.05);
-}
-
-.gallery-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(37, 99, 235, 0.8);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 2;
-}
-
-.gallery-overlay i {
-    color: white;
-    font-size: 1.5rem;
-    transform: scale(0.8);
-    transition: transform 0.3s ease;
-}
-
-.gallery-item:hover .gallery-overlay {
-    opacity: 1;
-}
-
-.gallery-item:hover .gallery-overlay i {
-    transform: scale(1);
-}
-
-/* Q&A 섹션 */
-.qa-list {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-4);
-}
+/* Q&A styles removed - not used */
 
 .qa-item {
     display: flex;
