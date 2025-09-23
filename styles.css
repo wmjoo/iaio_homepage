@@ -130,7 +130,7 @@ body {
     color: white;
     text-align: center;
     padding: var(--space-2) var(--space-4);
-    /* margin-bottom: var(--space-2) !important; */
+    margin-bottom: 0 !important;
     margin-top: 0 !important;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
     min-height: 45px;
@@ -822,7 +822,7 @@ body {
     color: white;
     padding: var(--space-16) var(--space-8);
     border-radius: var(--radius-2xl);
-    margin-bottom: var(--space-12);
+    margin-bottom: var(--space-6);
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -1518,7 +1518,7 @@ body {
     color: white;
     padding: var(--space-3) var(--space-4);
     border-radius: var(--radius-lg);
-    margin-bottom: var(--space-8);
+    margin-bottom: var(--space-4);
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -1572,7 +1572,7 @@ body {
     gap: var(--space-6);
     justify-content: center;
     align-items: center;
-    margin-bottom: var(--space-8);
+    margin-bottom: var(--space-4);
     flex-wrap: wrap;
 }
 
@@ -6338,7 +6338,7 @@ body.dark-mode .contact-item p {
     .mobile-page-header {
         display: flex !important;
         margin-top: 65px !important;
-        margin-bottom: var(--space-1) !important;
+        margin-bottom: 0 !important;
     }
     
     /* 모바일 헤더 반응형 개선 */
