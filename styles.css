@@ -11,7 +11,7 @@
     --error: #ef4444;
     
     /* 다크모드 강조 색상 */
-    --accent-light: #b0e0e6;
+    --accent-light: #87ceeb;
     --accent-cyan: #22d3ee;
     
     /* 중성 색상 */
@@ -1616,9 +1616,40 @@ body {
 /* INTRODUCTION 페이지 상단 카드와 하단 연락처 카드 너비 맞춤 */
 .why-optimization-section,
 .about-lab-section {
-    max-width: 100%;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+    padding: var(--space-8);
+    background: white;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--gray-200);
+    border-left: 3px solid var(--primary);
+    transition: all 0.3s ease;
+    margin-bottom: var(--space-8);
+}
+
+.why-optimization-section:hover,
+.about-lab-section:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-left-color: var(--primary-dark);
+}
+
+/* 다크모드 상단 섹션들 */
+body.dark-mode .why-optimization-section,
+body.dark-mode .about-lab-section {
+    background: var(--gray-800) !important;
+    border: 1px solid var(--gray-600) !important;
+    border-left: 3px solid var(--primary) !important;
+    color: var(--gray-200) !important;
+}
+
+body.dark-mode .why-optimization-section:hover,
+body.dark-mode .about-lab-section:hover {
+    background: var(--gray-700) !important;
+    border-left-color: var(--primary-light) !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3) !important;
 }
 
 .contact-grid {
@@ -1632,21 +1663,38 @@ body {
     margin: 0 auto;
 }
 
-/* Contact 컨테이너 박스 스타일 */
+/* Contact 컨테이너 박스 스타일 - section-content와 동일하게 */
 .contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--space-8);
     background: white;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-sm);
     border: 1px solid var(--gray-200);
-    padding: var(--space-6);
-    margin-top: var(--space-4);
+    border-left: 3px solid var(--primary);
+    transition: all 0.3s ease;
+    margin-bottom: var(--space-8);
+}
+
+.contact-container:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-left-color: var(--primary-dark);
 }
 
 /* 다크모드 Contact 컨테이너 */
 body.dark-mode .contact-container {
     background: var(--gray-800) !important;
     border: 1px solid var(--gray-600) !important;
+    border-left: 3px solid var(--primary) !important;
     color: var(--gray-200) !important;
+}
+
+body.dark-mode .contact-container:hover {
+    background: var(--gray-700) !important;
+    border-left-color: var(--primary-light) !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3) !important;
 }
 
 /* 다크모드 모든 텍스트 색상 강제 적용 */
@@ -1751,6 +1799,115 @@ body.dark-mode * h3 {
 body.dark-mode * h4 {
     color: var(--accent-light) !important;
     font-weight: 600 !important;
+}
+
+/* ===== 전역 스타일 강제 통일 ===== */
+
+/* 모든 h3 태그 강제 통일 */
+* h3,
+h3,
+.section-content h3,
+.research-topic h3,
+.course-section h3,
+.professor-info h3,
+.student-info h3,
+.alumni-info h3,
+.area-card h3,
+.project-card h3,
+.achievement-card h3,
+.facility-card h3,
+.publication-item h3,
+.conference-item h3,
+.patent-item h3,
+.course-card h3,
+.seminar-item h3,
+.notice-item h3,
+.qa-item h3,
+.schedule-item h3,
+.photo-item h3,
+.link-card h3,
+.contact-item h4 {
+    color: var(--primary) !important;
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    margin: var(--space-6) 0 var(--space-4) 0 !important;
+    padding-bottom: var(--space-2) !important;
+    border-bottom: 2px solid var(--primary) !important;
+    line-height: 1.4 !important;
+}
+
+* h3:first-child,
+h3:first-child,
+.section-content h3:first-child,
+.research-topic h3:first-child {
+    margin-top: 0 !important;
+}
+
+/* 모든 h4 태그 강제 통일 */
+* h4,
+h4,
+.contact-item h4,
+.student-info h4,
+.alumni-info h4 {
+    color: var(--primary) !important;
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    margin: var(--space-4) 0 var(--space-3) 0 !important;
+    padding-bottom: var(--space-1) !important;
+    border-bottom: 1px solid var(--primary) !important;
+}
+
+/* 모든 h2 태그 강제 통일 */
+* h2,
+h2,
+.section-header h2,
+.page-header h2 {
+    color: var(--primary) !important;
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    margin: var(--space-8) 0 var(--space-6) 0 !important;
+    padding-bottom: var(--space-3) !important;
+    border-bottom: 3px solid var(--primary) !important;
+}
+
+/* 다크모드 모든 헤더 태그 강제 통일 */
+body.dark-mode * h1,
+body.dark-mode * h2,
+body.dark-mode * h3,
+body.dark-mode * h4,
+body.dark-mode * h5,
+body.dark-mode * h6,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode .section-header h2,
+body.dark-mode .page-header h2,
+body.dark-mode .section-content h3,
+body.dark-mode .research-topic h3,
+body.dark-mode .course-section h3,
+body.dark-mode .professor-info h3,
+body.dark-mode .student-info h3,
+body.dark-mode .alumni-info h3,
+body.dark-mode .area-card h3,
+body.dark-mode .project-card h3,
+body.dark-mode .achievement-card h3,
+body.dark-mode .facility-card h3,
+body.dark-mode .publication-item h3,
+body.dark-mode .conference-item h3,
+body.dark-mode .patent-item h3,
+body.dark-mode .course-card h3,
+body.dark-mode .seminar-item h3,
+body.dark-mode .notice-item h3,
+body.dark-mode .qa-item h3,
+body.dark-mode .schedule-item h3,
+body.dark-mode .photo-item h3,
+body.dark-mode .link-card h3,
+body.dark-mode .contact-item h4 {
+    color: var(--accent-light) !important;
+    border-bottom-color: var(--primary) !important;
 }
 
 .intro-text {
