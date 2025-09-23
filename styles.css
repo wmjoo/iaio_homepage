@@ -45,7 +45,7 @@
     --space-1: 0.25rem;
     --space-2: 0.25rem;
     --space-3: 0.75rem;
---space-4: 1rem;
+    --space-4: 1rem;
     --space-5: 1.25rem;
     --space-6: 1.5rem;
     --space-8: 2rem;
@@ -7290,7 +7290,7 @@ body.dark-mode .project-item:hover {
     display: flex;
     align-items: center;
     gap: var(--space-3);
-    margin-bottom: var(--space-4);
+    margin: var(--space-3) 0;
 }
 
 .people-card:hover {
