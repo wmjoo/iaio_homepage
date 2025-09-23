@@ -132,6 +132,7 @@ body {
     padding: var(--space-2) var(--space-4);
     margin-bottom: 0 !important;
     margin-top: 0 !important;
+    padding-bottom: 0 !important;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
     min-height: 45px;
     align-items: center;
@@ -8157,8 +8158,9 @@ body.dark-mode .stat-card * {
     
     /* 모바일에서 links-tabs 간격 최소화 - 버튼 높이의 절반 정도 */
     .links-tabs {
-        margin-top: 4px !important;
+        margin-top: 2px !important;
         margin-bottom: var(--space-4) !important;
+        padding-top: 0 !important;
     }
     
     /* 모바일에서 상단바 높이만큼 여백 추가 */
@@ -8167,7 +8169,7 @@ body.dark-mode .stat-card * {
     }
     
     .main-content {
-        padding-top: 60px !important;
+        padding-top: 0 !important;
     }
 }
 
