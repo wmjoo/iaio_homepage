@@ -10,6 +10,10 @@
     --warning: #f59e0b;
     --error: #ef4444;
     
+    /* 다크모드 강조 색상 */
+    --accent-light: #b0e0e6;
+    --accent-cyan: #22d3ee;
+    
     /* 중성 색상 */
     --gray-50: #f8fafc;
     --gray-100: #f1f5f9;
@@ -752,7 +756,7 @@ body {
 }
 
 .nav-list li {
-    border-bottom: 1px solid var(--gray-200);
+    border-bottom: none;
 }
 
 .nav-list li:last-child {
@@ -1305,19 +1309,10 @@ body {
     }
     
     .nav-link::after {
-        content: '';
-        position: absolute;
-        bottom: -2px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 0;
-        height: 2px;
-        background: var(--gradient-primary);
-        transition: width 0.3s ease;
-    }
-    
-    .nav-link:hover::after {
-        width: 100%;
+        display: none !important;
+        content: none !important;
+        height: 0 !important;
+        width: 0 !important;
     }
     
     .nav-link:hover {
@@ -1615,6 +1610,147 @@ body {
     grid-template-columns: 1fr;
     gap: var(--space-8);
     margin-bottom: var(--space-8);
+    max-width: 100%;
+}
+
+/* INTRODUCTION 페이지 상단 카드와 하단 연락처 카드 너비 맞춤 */
+.why-optimization-section,
+.about-lab-section {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact-grid {
+    max-width: 100%;
+    width: 100%;
+}
+
+.contact-container {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Contact 컨테이너 박스 스타일 */
+.contact-container {
+    background: white;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--gray-200);
+    padding: var(--space-6);
+    margin-top: var(--space-4);
+}
+
+/* 다크모드 Contact 컨테이너 */
+body.dark-mode .contact-container {
+    background: var(--gray-800) !important;
+    border: 1px solid var(--gray-600) !important;
+    color: var(--gray-200) !important;
+}
+
+/* 다크모드 모든 텍스트 색상 강제 적용 */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode .section-header h2,
+body.dark-mode .section-header h3,
+body.dark-mode .page-header h1,
+body.dark-mode .page-header h2,
+body.dark-mode .page-header h3,
+body.dark-mode .professor-card h3,
+body.dark-mode .student-card h4,
+body.dark-mode .alumni-item h4,
+body.dark-mode .area-card h3,
+body.dark-mode .project-card h3,
+body.dark-mode .achievement-card h3,
+body.dark-mode .facility-card h3,
+body.dark-mode .publication-item h3,
+body.dark-mode .conference-item h3,
+body.dark-mode .patent-item h3,
+body.dark-mode .course-card h3,
+body.dark-mode .seminar-item h3,
+body.dark-mode .notice-item h3,
+body.dark-mode .qa-item h3,
+body.dark-mode .schedule-item h3,
+body.dark-mode .photo-item h3,
+body.dark-mode .link-card h3,
+body.dark-mode .sitemap-section h2,
+body.dark-mode .contact-item h4 {
+    color: var(--accent-light) !important;
+}
+
+/* 다크모드 강조 색상 적용 */
+body.dark-mode .section-header i,
+body.dark-mode .page-header i,
+body.dark-mode .contact-item i,
+body.dark-mode .professor-card i,
+body.dark-mode .student-card i,
+body.dark-mode .alumni-item i,
+body.dark-mode .area-card i,
+body.dark-mode .project-card i,
+body.dark-mode .achievement-card i,
+body.dark-mode .facility-card i,
+body.dark-mode .publication-item i,
+body.dark-mode .conference-item i,
+body.dark-mode .patent-item i,
+body.dark-mode .course-card i,
+body.dark-mode .seminar-item i,
+body.dark-mode .notice-item i,
+body.dark-mode .qa-item i,
+body.dark-mode .schedule-item i,
+body.dark-mode .photo-item i,
+body.dark-mode .link-card i {
+    color: var(--accent-cyan) !important;
+}
+
+/* 다크모드 링크 색상 */
+body.dark-mode a {
+    color: var(--accent-light) !important;
+}
+
+body.dark-mode a:hover {
+    color: var(--accent-cyan) !important;
+}
+
+/* 다크모드 h3 태그 강제 색상 적용 */
+body.dark-mode h3,
+body.dark-mode .section-content h3,
+body.dark-mode .professor-info h3,
+body.dark-mode .student-info h3,
+body.dark-mode .alumni-info h3,
+body.dark-mode .area-card h3,
+body.dark-mode .project-card h3,
+body.dark-mode .achievement-card h3,
+body.dark-mode .facility-card h3,
+body.dark-mode .publication-item h3,
+body.dark-mode .conference-item h3,
+body.dark-mode .patent-item h3,
+body.dark-mode .course-card h3,
+body.dark-mode .seminar-item h3,
+body.dark-mode .notice-item h3,
+body.dark-mode .qa-item h3,
+body.dark-mode .schedule-item h3,
+body.dark-mode .photo-item h3,
+body.dark-mode .link-card h3,
+body.dark-mode .contact-item h4 {
+    color: var(--accent-light) !important;
+    font-weight: 600 !important;
+}
+
+/* 다크모드 모든 h3 태그 강제 적용 - 더 높은 우선순위 */
+body.dark-mode * h3 {
+    color: var(--accent-light) !important;
+    font-weight: 600 !important;
+}
+
+/* 다크모드 모든 h4 태그 강제 적용 */
+body.dark-mode * h4 {
+    color: var(--accent-light) !important;
+    font-weight: 600 !important;
 }
 
 .intro-text {
@@ -4276,7 +4412,7 @@ body.dark-mode .write-btn:hover {
 
 /* 다크모드 탭 버튼 */
 body.dark-mode .links-tabs {
-    background: var(--gray-800) !important;
+    background: var(--gray-900) !important;
     border-color: var(--gray-600) !important;
 }
 
@@ -5585,7 +5721,7 @@ body.dark-mode .contact-item p {
     }
     
     .nav-list li {
-        border-bottom: 1px solid var(--gray-200);
+        border-bottom: none;
     }
     
     .nav-list li:last-child {
@@ -5746,6 +5882,12 @@ body.dark-mode .contact-item p {
     font-size: 0.9rem;
     border-radius: var(--radius-sm);
     transition: all 0.3s ease;
+}
+
+.sub-link::before,
+.sub-link::after {
+    display: none !important;
+    content: none !important;
 }
 
 .sub-link:hover {
@@ -8084,11 +8226,12 @@ body.dark-mode .stat-card * {
 /* 모바일 버전 탭 버튼 스타일 */
 @media (max-width: 1023px) {
     .tab-btn {
-        flex: 0 0 calc(33.333% - var(--space-1));
+        flex: 1;
         min-width: 0;
-        font-size: 0.8rem;
+        font-size: 0.75rem;
         padding: var(--space-2) var(--space-2);
         margin-bottom: var(--space-2);
+        letter-spacing: -0.75px;
     }
 }
 
@@ -8414,7 +8557,9 @@ body.dark-mode .link-item {
 }
 
 body.dark-mode .link-card {
+    background: var(--gray-800) !important;
     color: #f1f5f9 !important;
+    border-color: var(--gray-600) !important;
 }
 
 body.dark-mode .link-info h3 {
