@@ -8760,7 +8760,7 @@ body.dark-mode .link-icon {
 
 .education-section h4,
 .experience-section h4 {
-    color: var(--primary);
+    color: #ffffff;
     font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: var(--space-4);
