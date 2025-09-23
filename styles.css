@@ -5395,7 +5395,7 @@ body.dark-mode .course-section .section-content {
 }
 
 body.dark-mode .course-section .section-content h3 {
-    color: var(--primary) !important;
+    color: #ffffff !important;
     border-bottom-color: var(--primary) !important;
 }
 
