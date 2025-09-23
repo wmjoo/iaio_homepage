@@ -126,14 +126,14 @@ body {
 /* 모바일 페이지 헤더 - 기본적으로 숨김 */
 .mobile-page-header {
     display: none;
-    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    background: linear-gradient(135deg, #1e3a8a, #1e40af);
     color: white;
     text-align: center;
-    padding: var(--space-3) var(--space-4);
-    margin-bottom: 20px !important;
+    padding: var(--space-2) var(--space-4);
+    margin-bottom: var(--space-2) !important;
     margin-top: 0 !important;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    min-height: 60px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+    min-height: 45px;
     align-items: center;
     justify-content: center;
 }
@@ -157,10 +157,10 @@ body {
 }
 
 .mobile-page-header h1 {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1.3rem;
+    font-weight: 600;
     margin: 0;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
 }
 
 .mobile-header-content {
@@ -4035,7 +4035,7 @@ body.dark-mode .mobile-header .logo-link:hover {
 
 /* 다크모드 모바일 페이지 헤더 */
 body.dark-mode .mobile-page-header {
-    background: linear-gradient(135deg, var(--primary), var(--primary-dark)) !important;
+    background: linear-gradient(135deg, #1e40af, #1d4ed8) !important;
     color: white !important;
 }
 
@@ -6332,7 +6332,7 @@ body.dark-mode .contact-item p {
     /* 모바일에서만 페이지 헤더 표시 */
     .mobile-page-header {
         display: flex !important;
-        margin-top: 60px !important;
+        margin-top: 65px !important;
     }
     
     /* 모바일 헤더 반응형 개선 */
