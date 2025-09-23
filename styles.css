@@ -8390,6 +8390,15 @@ body.dark-mode .stat-card * {
         margin-bottom: var(--space-2);
         letter-spacing: -0.75px;
     }
+    
+    /* 모바일에서 상단바 높이만큼 여백 추가 */
+    .page-header {
+        margin-top: 60px !important;
+    }
+    
+    .main-content {
+        padding-top: 60px !important;
+    }
 }
 
 .tab-btn:hover {
@@ -8725,6 +8734,70 @@ body.dark-mode .link-info h3 {
 
 body.dark-mode .link-info p {
     color: #cbd5e1 !important;
+}
+
+/* ===== 다크모드 헤더 색상 최종 설정 ===== */
+/* h2는 하늘색, h3/h4는 흰색으로 설정 */
+
+/* h2는 하늘색 */
+body.dark-mode h2,
+body.dark-mode * h2,
+body.dark-mode .section-header h2,
+body.dark-mode .page-header h2,
+body.dark-mode .sitemap-section h2 {
+    color: var(--accent-light) !important;
+    font-weight: 700 !important;
+}
+
+/* h3는 흰색 */
+body.dark-mode h3,
+body.dark-mode * h3,
+body.dark-mode .section-content h3,
+body.dark-mode .research-topic h3,
+body.dark-mode .course-section h3,
+body.dark-mode .professor-info h3,
+body.dark-mode .student-info h3,
+body.dark-mode .alumni-info h3,
+body.dark-mode .area-card h3,
+body.dark-mode .project-card h3,
+body.dark-mode .achievement-card h3,
+body.dark-mode .facility-card h3,
+body.dark-mode .publication-item h3,
+body.dark-mode .conference-item h3,
+body.dark-mode .patent-item h3,
+body.dark-mode .course-card h3,
+body.dark-mode .seminar-item h3,
+body.dark-mode .notice-item h3,
+body.dark-mode .qa-item h3,
+body.dark-mode .schedule-item h3,
+body.dark-mode .photo-item h3,
+body.dark-mode .link-card h3,
+body.dark-mode .content-section h3,
+body.dark-mode .footer h3,
+body.dark-mode .sidebar h3,
+body.dark-mode .sidebar-section h3,
+body.dark-mode .research-field h3,
+body.dark-mode .sidebar-header h3,
+body.dark-mode .process-bubble h3,
+body.dark-mode .content-item h3,
+body.dark-mode .project-section h3,
+body.dark-mode .project-header h3,
+body.dark-mode .misc-content h3,
+body.dark-mode .link-info h3 {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+}
+
+/* h4는 흰색 */
+body.dark-mode h4,
+body.dark-mode * h4,
+body.dark-mode .contact-item h4,
+body.dark-mode .student-card h4,
+body.dark-mode .alumni-item h4,
+body.dark-mode .student-info h4,
+body.dark-mode .alumni-info h4 {
+    color: #ffffff !important;
+    font-weight: 600 !important;
 }
 
 body.dark-mode .link-icon {
