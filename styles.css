@@ -8335,6 +8335,12 @@ body.dark-mode .stat-card * {
         letter-spacing: -0.75px;
     }
     
+    /* 모바일에서 links-tabs 간격 줄이기 */
+    .links-tabs {
+        margin-top: var(--space-1) !important;
+        margin-bottom: var(--space-4) !important;
+    }
+    
     /* 모바일에서 상단바 높이만큼 여백 추가 */
     .page-header {
         margin-top: 60px !important;
@@ -8882,4 +8888,16 @@ body.dark-mode .link-item:hover {
 [data-theme="dark"] .contact-info {
     background: var(--bg-secondary);
     border: 1px solid var(--border-color);
+}
+
+
+.example-list li {
+    margin-left: 1rem;   /* 1탭 정도 들여쓰기 */
+    padding-left: 0.5rem;
+}
+
+.example-list ul li {
+    margin-left: 2rem;   /* 서브 불릿은 더 깊게 */
+    padding-left: 0.5rem;
+    list-style-type: circle; /* 서브 불릿 모양 바꿔줌 */
 }
