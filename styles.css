@@ -8408,8 +8408,9 @@ body.dark-mode .stat-card * {
 
 /* 다크모드에서 링크 카드 스타일 */
 body.dark-mode .link-item {
-    background: linear-gradient(135deg, #1e293b, #334155) !important;
-    border: 1px solid #475569 !important;
+    background: linear-gradient(135deg, #0f172a, #1e293b) !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.2) !important;
 }
 
 body.dark-mode .link-card {
@@ -8417,11 +8418,11 @@ body.dark-mode .link-card {
 }
 
 body.dark-mode .link-info h3 {
-    color: #f1f5f9 !important;
+    color: #ffffff !important;
 }
 
 body.dark-mode .link-info p {
-    color: #94a3b8 !important;
+    color: #cbd5e1 !important;
 }
 
 body.dark-mode .link-icon {
@@ -8430,11 +8431,18 @@ body.dark-mode .link-icon {
 }
 
 body.dark-mode .link-arrow {
-    color: #94a3b8 !important;
+    color: #cbd5e1 !important;
 }
 
 body.dark-mode .link-card:hover .link-arrow {
     color: var(--primary) !important;
+}
+
+/* 다크모드 호버 효과 */
+body.dark-mode .link-item:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4), 0 4px 10px rgba(0, 0, 0, 0.3) !important;
+    border-color: var(--primary) !important;
 }
 
 [data-theme="dark"] .link-info p,
