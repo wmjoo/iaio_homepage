@@ -7283,7 +7283,7 @@ body.dark-mode .project-item:hover {
 .people-card {
     background: white;
     border-radius: var(--radius-lg);
-    padding: var(--space-6);
+    padding: var(--space-4);
     box-shadow: var(--shadow-sm);
     border: 1px solid var(--gray-200);
     transition: all 0.3s ease;
@@ -8722,4 +8722,17 @@ body.dark-mode .link-item:hover {
     margin-left: 2rem;   /* 서브 불릿은 더 깊게 */
     padding-left: 0.5rem;
     list-style-type: circle; /* 서브 불릿 모양 바꿔줌 */
+}
+
+.prof-image {
+    display: flex;               /* 가로/세로 가운데 정렬 */
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;         /* 아이콘과 텍스트 간격 */
+    margin-bottom: 20px;         /* 아이콘과 텍스트 간격 */
+}
+
+.prof-image i {
+    font-size: 10rem;            /* 아이콘 크기 */
+    color: #333;                 /* 아이콘 색상 */
 }
