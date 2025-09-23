@@ -8156,9 +8156,9 @@ body.dark-mode .stat-card * {
         letter-spacing: -0.75px;
     }
     
-    /* 모바일에서 links-tabs 간격 최소화 - 버튼 높이의 절반 정도 */
+    /* 모바일에서 links-tabs 간격 조정 - 버튼 높이의 절반 정도 */
     .links-tabs {
-        margin-top: 2px !important;
+        margin-top: 4px !important;
         margin-bottom: var(--space-4) !important;
         padding-top: 0 !important;
     }
