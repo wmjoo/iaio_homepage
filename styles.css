@@ -8810,7 +8810,7 @@ body.dark-mode .link-icon {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--space-8);
-    margin-top: var(--space-6);
+    margin-top: var(--space-2);
 }
 
 .education-section,
