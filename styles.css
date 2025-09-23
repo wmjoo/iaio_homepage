@@ -8796,6 +8796,7 @@ body.dark-mode .link-icon {
 .experience-item div p {
     margin: 0;
     line-height: 1.5;
+    font-size: 1rem;
 }
 
 .education-item div p:first-child,
@@ -8807,7 +8808,7 @@ body.dark-mode .link-icon {
 .education-item div p:last-child,
 .experience-item div p:last-child {
     color: var(--gray-600);
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 /* Mobile responsive - 1 column */
