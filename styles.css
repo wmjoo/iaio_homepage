@@ -2176,27 +2176,7 @@ body.dark-mode .contact-item h4 {
     font-size: 0.95rem;
 }
 
-.education-section,
-.experience-section {
-    margin-bottom: var(--space-6);
-}
-
-.education-section h4,
-.experience-section h4 {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--gray-800);
-    margin-bottom: var(--space-4);
-    display: flex;
-    align-items: center;
-    gap: var(--space-2);
-}
-
-.education-section h4 i,
-.experience-section h4 i {
-    color: var(--primary);
-    font-size: 1rem;
-}
+/* Remove old conflicting styles - now handled by professor-details-grid */
 
 .education-item,
 .experience-item {
@@ -7711,21 +7691,7 @@ body.dark-mode .stat-card * {
     color: var(--primary);
 }
 
-.dark-mode .education-section,
-.dark-mode .experience-section {
-    background: var(--gray-800);
-    border: 1px solid var(--gray-700);
-}
-
-.dark-mode .education-section h4,
-.dark-mode .experience-section h4 {
-    color: var(--gray-100);
-}
-
-.dark-mode .education-item p,
-.dark-mode .experience-item p {
-    color: var(--gray-300);
-}
+/* Remove old conflicting dark mode styles - now handled by professor-details-grid */
 
 .dark-mode .education-item i,
 .dark-mode .experience-item i {
